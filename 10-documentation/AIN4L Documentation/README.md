@@ -142,7 +142,7 @@
 
 <p>You may run the python script differently in case of using different OS from Ubuntu 22.04., just be sure you have written the correct chapter name</p>
 
-<p><strong>Example Output</strong>: <a href="https://gitlab.symbioticeda.com/mohamedkhaled/auto_n4l_2_documentation/-/blob/main/Pure_Hardware_YOLO_Inference.md" style="color: #2c7da0;">Here</a> It is generated from this <a href="https://gitlab.symbioticeda.com/mohamedkhaled/auto_n4l_2_documentation/-/blob/main/eayolo.n4l" style="color: #2c7da0;">notes file</a></p>
+<p><strong>Example Output</strong>: <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/Pure_Hardware_YOLO_Inference.md" style="color: #2c7da0;">Here</a> It is generated from this <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/eayolo.n4l" style="color: #2c7da0;">notes file</a></p>
 
 <h3 style="color: #1c4e6c;">8. Funding</h3>
 
