@@ -121,7 +121,7 @@ if file_opened:
                     "content": f'{llm_input}'
                 }
             ],
-            temperature=0.2,
+            temperature=0,
             top_p=0.7
             )
             new_md_file.write(output["choices"][0]["message"]["content"] + "\n")
