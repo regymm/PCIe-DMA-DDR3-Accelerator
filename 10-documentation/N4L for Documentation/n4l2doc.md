@@ -128,17 +128,17 @@ You may notice that the generated markdown file is relying on sparse lines with 
 
 In case you feel this process can sound tedious, you can visit <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/tree/main/10-documentation/AIN4L%20Documentation">this project</a> for an AI-assisted tool for automatically converting the N4L file stored in the database directly into a project documentation in markdown format.
 
-<h3 ">6. Funding</h3>
+<h2 ">6. Funding</h2>
 
 <p>The project is funded by <strong ">NLnet</strong></p>
 
 <img src="./imgs/nlnet.png" style="max-width: 200px; border-radius: 16px; margin: 20px 0;">
 
-<h3 ">7. License</h3>
+<h2 ">7. License</h2>
 
 <p>The project is under <strong>GPL License V2.0</strong></p>
 
-<h3 ">8. Author</h3>
+<h2 ">8. Author</h2>
 
 <p>This document and the methodology is authored by <a href="https://github.com/m7md5303""> Mohamed Khaled</a> from <strong>Symbiotic EDA</strong></p>
 
