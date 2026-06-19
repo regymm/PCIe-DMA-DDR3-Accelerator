@@ -222,7 +222,7 @@ For these 4 files, you are free to add whatever relations you think they are app
 
 You should be ready now for the basic writing of N4L notes. However, there are two points that should be mentioned to improve your experience with N4L
 
-**1-Dattos ("):** This symbol `"` can make your noting much easier if you knew what it can provide. This symbol `"` acts as a second instance from the multi-appearing nodes.
+**1-dittos ("):** This symbol `"` can make your noting much easier if you knew what it can provide. This symbol `"` acts as a second instance from the multi-appearing nodes.
 
 For example, if you want to describe two relations sourcing from Ahmed, in normal flow you would write:
 
@@ -239,7 +239,7 @@ Hence, you would write the previous example as:
 Ahmed (relation1) object1
   "   (relation2) object2
 ```
-The N4L compiler will automatically replace your dattos with the last node, which is in this case "Ahmed"
+The N4L compiler will automatically replace your dittos with the last node, which is in this case "Ahmed"
 
 **2-Comments:** Often, you may want to add some comments to yourself out of that text you want to store in the database. N4L provides two methods for writing commented lines inside the file:
 
