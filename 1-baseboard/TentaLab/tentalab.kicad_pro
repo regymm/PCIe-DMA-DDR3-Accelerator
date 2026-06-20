@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 4.3,
-          "height": 8.6,
-          "width": 8.6
+          "drill": 0.0,
+          "height": 2.2,
+          "width": 1.2
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.127
         }
       },
       "diff_pair_dimensions": [
@@ -130,11 +130,11 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_clearance": 0.0889,
+        "min_connection": 0.1016,
+        "min_copper_edge_clearance": 0.254,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
+        "min_hole_clearance": 0.0889,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
@@ -143,9 +143,9 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_track_width": 0.0889,
+        "min_via_annular_width": 0.0762,
+        "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -493,7 +493,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.1016,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -509,6 +509,58 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.0889,
+        "diff_pair_gap": 0.1016,
+        "diff_pair_width": 0.1143,
+        "name": "DIFF",
+        "pcb_color": "rgb(101, 255, 22)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.0889,
+        "diff_pair_gap": 0.1016,
+        "diff_pair_width": 0.201168,
+        "name": "PCIe",
+        "pcb_color": "rgb(255, 220, 0)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.1016,
+        "name": "PWR",
+        "pcb_color": "rgb(255, 125, 167)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.254,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3
+      },
+      {
+        "clearance": 0.0889,
+        "name": "Thin",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.0889,
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.2
+      },
+      {
+        "clearance": 0.0889,
+        "diff_pair_gap": 0.1016,
+        "diff_pair_width": 0.167132,
+        "name": "USB3",
+        "pcb_color": "rgb(5, 190, 255)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -721,7 +773,84 @@
         "USB_90Ohm_diff"
       ]
     },
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "PWR",
+        "pattern": "*3.3V*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "*U5-VCC*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "*5V*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "*12V*"
+      },
+      {
+        "netclass": "Thin",
+        "pattern": "*U5-UD-*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "*3V3*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "*VBUS"
+      },
+      {
+        "netclass": "PCIe",
+        "pattern": "*FPGA*RX*"
+      },
+      {
+        "netclass": "PCIe",
+        "pattern": "*FPGA*TX*"
+      },
+      {
+        "netclass": "USB3",
+        "pattern": "*USB_SS*"
+      },
+      {
+        "netclass": "DIFF",
+        "pattern": "*ETH.D*"
+      },
+      {
+        "netclass": "DIFF",
+        "pattern": "*HDMI*.D*"
+      },
+      {
+        "netclass": "DIFF",
+        "pattern": "*MIPI*"
+      },
+      {
+        "netclass": "DIFF",
+        "pattern": "*HDMI*CLK*"
+      },
+      {
+        "netclass": "PCIe",
+        "pattern": "*REFCLK*"
+      },
+      {
+        "netclass": "PCIe",
+        "pattern": "*PCIe*TX*"
+      },
+      {
+        "netclass": "PCIe",
+        "pattern": "*PCIe*RX*"
+      },
+      {
+        "netclass": "DIFF",
+        "pattern": "*USB.D*"
+      },
+      {
+        "netclass": "Thin",
+        "pattern": "*U2*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -1030,7 +1159,7 @@
         "uuid": "5c2d5900-a930-43a7-a9b1-a39df18fd8bc"
       }
     ],
-    "used_designators": "#PWR180-186,H5-11",
+    "used_designators": "J29-30",
     "variants": []
   },
   "sheets": [
@@ -1043,11 +1172,11 @@
       "PCIE X8 FPGA0"
     ],
     [
-      "0c68e4ea-7b05-4856-8db8-99b25695e072",
+      "655a46f1-fed0-451e-97f4-e5a5a4311e42",
       "SFP0"
     ],
     [
-      "8efed9a5-3c01-4c38-9278-f558e6cf8869",
+      "c73d11ea-b696-4931-966f-2755b6fee708",
       "SFP1"
     ],
     [
@@ -1055,11 +1184,11 @@
       "PCIE X8 FPGA1"
     ],
     [
-      "302079e1-faaf-42ab-99f2-2b9b70d76083",
+      "61dc202e-9f03-4bcb-afa1-f44ea4ee69e6",
       "SFP2"
     ],
     [
-      "9f479fe4-e7f1-46d1-ab57-192df595097a",
+      "1cd220b6-f469-4d7f-acd2-995ca14f2b59",
       "SFP3"
     ],
     [
@@ -1071,20 +1200,60 @@
       "PCIE X8 FPGA3"
     ],
     [
-      "9075646a-3e45-4184-9ee6-4ab7e73681b8",
+      "bb331b55-0810-4354-a4e9-1f5636c4b4f5",
       "SFP4"
     ],
     [
-      "1fe87666-5648-4d84-9923-81f17726475a",
+      "7c719a55-e9cc-41dc-a700-eee7f75d86a2",
       "SFP5"
     ],
     [
-      "09375010-7eaa-44a7-a9e5-61b9c695d1ae",
+      "9f7c58d4-f39b-4514-be91-45eea5a3b735",
       "SFP6"
     ],
     [
-      "fee200ca-0d55-4024-b63c-7349a3abdbf2",
+      "891d8b55-d35e-47df-91c9-9f09ff1b396b",
       "SFP7"
+    ],
+    [
+      "ce13ae8c-26f2-4645-b566-63c18247dc99",
+      "SMU"
+    ],
+    [
+      "ce8041df-a202-42aa-943d-7bf4951b87ef",
+      "USBC_2.0_DEBUG"
+    ],
+    [
+      "6a3a75ca-1992-494a-907e-028a95399d7b",
+      "SMU_PWR"
+    ],
+    [
+      "0139ea8e-10ec-4c8b-8126-8c950a6b22ad",
+      "EPHY100M"
+    ],
+    [
+      "902fce56-ac9f-4ce7-9712-b69c18278d78",
+      "Eth_MAG_Pair"
+    ],
+    [
+      "ddc594ad-773d-4fc6-b6f3-4ec1431006b6",
+      "Eth_MAG_Pair1"
+    ],
+    [
+      "964b2c25-3cb4-492f-b85d-2551d7b5f8d3",
+      "QSFP1"
+    ],
+    [
+      "17082fe2-ee6d-41bd-8737-4ec9172ca594",
+      "QSFP2"
+    ],
+    [
+      "9ed91b22-4503-482a-847a-f80b2ed65d5a",
+      "QSFP3"
+    ],
+    [
+      "a7a77ddb-442f-4aa5-b1dd-8790429f614d",
+      "QSFP4"
     ]
   ],
   "text_variables": {},
