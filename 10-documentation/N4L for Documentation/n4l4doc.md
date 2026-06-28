@@ -15,11 +15,13 @@ This article is to discuss a new technology for documenting projects, saving dat
 
 5- Visualizing the graph
 
-6- Funding
+6- Conclusion
 
-7- License
+7- Funding
 
-8- Author
+8- License
+
+9- Author
 
 ## 1. Objective
 This document aims to provide a full guide for hardware or software engineers and students for how to use the Notes for Learning (N4L) technology to reach an efficient methodology of documenting projects. The main goal is to change how engineers (students) think about their projects components and how they can be linked together to form a well-organized graph. This shall lead to the elimination of the need to write hundreds of pages of documentations for every single project.
@@ -387,17 +389,21 @@ The capabilities don't stop here. You can view a table of content like text to h
 
 ![Knowledge Graph for the project](./imgs/tableofcontents.png)
 
-<h2 ">6. Funding</h2>
+
+<h2>6. Conclusion</h2>
+<p>The article introduces new methodology for documenting Hardware and software projects with more sustainability and less vulnerability to traditional documentation methodologies' drawbacks. It aims for havin more reasonability of documentations and more portability in addition to eliminating the need of consuming much time and effort preparing long pages of documentations.</p>
+
+<h2 ">7. Funding</h2>
 
 <p>The project is funded by <strong ">NLnet</strong></p>
 
 <img src="./imgs/nlnet.png" style="max-width: 200px; border-radius: 16px; margin: 20px 0;">
 
-<h2 ">7. License</h2>
+<h2 ">8. License</h2>
 
 <p>The project is under <strong>GPL License V2.0</strong></p>
 
-<h2 ">8. Author</h2>
+<h2 ">9. Author</h2>
 
 <p>This document and the methodology is authored by <a href="https://github.com/m7md5303""> Mohamed Khaled</a> from <strong>Symbiotic EDA</strong></p>
 
