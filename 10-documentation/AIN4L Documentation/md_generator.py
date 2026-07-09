@@ -1,20 +1,3 @@
-# Auto_N4L_2_Documentation - Converting N4L notes stored in the knowledge DB to projects documentation
-# Copyright (C) 2026 Mohamed Khaled
-#
-# This program is free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 2 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License along
-# with this program; if not, write to the Free Software Foundation, Inc.,
-# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-
 # ============================================================
 # Auto_N4L_2_Documentation
 # Author: Mohamed Khaled
@@ -109,7 +92,7 @@ if file_opened:
             messages=[
                 {
                     "role": "system",
-                    "content": "You role is to take markdown lines analyze line by line and paraphrase them to be professional project documentation in paragraphs and meaningful titles. It is forbidden to change or remove or add any information to the givens. Avoid generic titles"
+                    "content": "Your role is to take markdown lines analyze line by line and paraphrase them to be professional project documentation in paragraphs and meaningful titles. It is forbidden to change or remove or add any information to the givens. Avoid generic titles"
                 },
                 {
                     "role": "user",
@@ -131,14 +114,14 @@ if file_opened:
             messages=[
                 {
                     "role": "system",
-                    "content": "You role is to take markdown lines analyze line by line and paraphrase them to be professional project documentation in paragraphs and meaningful titles. It is forbidden to change or remove or add any information to the givens. Avoid generic titles."
+                    "content": "Your role is to take markdown lines analyze line by line and paraphrase them to be professional project documentation in paragraphs and meaningful titles. It is forbidden to change or remove or add any information to the givens. Avoid generic titles."
                 },
                 {
                     "role": "user",
                     "content": f'{llm_input}'
                 }
             ],
-            temperature=0,
+            temperature=0.2,
             top_p=0.7
             )
             new_md_file.write(output["choices"][0]["message"]["content"] + "\n")
