@@ -48,7 +48,7 @@ while (len(sep_lines)>10):# checking there is still retrieved output from the DB
                             md_file = open("./../generated_md/tmp.md", "w") 
                             file_opened = True
                         chapter_title_old = chapter_title
-                        md_file.write('# ' + chapter_title + '\n\n')
+                        md_file.write('# ' + chapter_title + '\n')
                     #getting sections
                     sec_title = re.match(r'^Context:\s*(.*)', line)
                     if sec_title:
@@ -80,6 +80,7 @@ if file_opened:
     ret_lines_tmp = []
     tmp_md_file = open("./../generated_md/tmp.md" , "r")
     new_md_file = open(md_filename , "w")
+    new_md_file.write("**Disclaimer: The Documentation is AI-generated and may make mistakes**" + "\n" + "\n")
     for line in tmp_md_file: #looping on the static generated md lines
         ret_chunks = ret_chunks+1
         ret_lines_tmp.append(line)
@@ -114,14 +115,14 @@ if file_opened:
             messages=[
                 {
                     "role": "system",
-                    "content": "Your role is to take markdown lines analyze line by line and paraphrase them to be professional project documentation in paragraphs and meaningful titles. It is forbidden to change or remove or add any information to the givens. Avoid generic titles."
+                    "content": "Your role is to take markdown lines analyze line by line and paraphrase them to be professional project documentation in paragraphs and meaningful titles. It is forbidden to change or remove or add any information to the givens. Avoid generic titles"
                 },
                 {
                     "role": "user",
                     "content": f'{llm_input}'
                 }
             ],
-            temperature=0.2,
+            temperature=0,
             top_p=0.7
             )
             new_md_file.write(output["choices"][0]["message"]["content"] + "\n")
