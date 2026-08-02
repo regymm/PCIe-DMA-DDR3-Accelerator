@@ -67,6 +67,8 @@ if file_opened:
 #-------------------------------------------------------------------------------------#
 # Adding the LLM Feature
 #instantiating the local LLM
+if (sys.argv[2]):
+    custom_prompt = sys.argv[2]
 if file_opened:
     llm = Llama(
         model_path="./models/qwen2.5-3b-instruct-q4_k_m.gguf",
@@ -89,17 +91,23 @@ if file_opened:
             llm_input = "".join(ret_lines_tmp)
             ret_chunks=0
             ret_lines_tmp=[]
-            output = llm.create_chat_completion(
             messages=[
                 {
                     "role": "system",
                     "content": "Your role is to take markdown lines analyze line by line and paraphrase them to be professional project documentation in paragraphs and meaningful titles. It is forbidden to change or remove or add any information to the givens. Avoid generic titles"
-                },
-                {
-                    "role": "user",
-                    "content": f'{llm_input}'
                 }
-            ],
+            ]
+            if (custom_prompt) :
+                messages.append({
+                     "role": "system",
+                    "content": custom_prompt
+                })
+            messages.append({
+                "role": "user",
+                "content": f'{llm_input}'
+            })
+            output = llm.create_chat_completion(
+            messages = messages,
             temperature=0,
             top_p=0.7
             )
@@ -111,17 +119,23 @@ if file_opened:
             llm_input = "".join(ret_lines_tmp)
             ret_chunks=0
             ret_lines_tmp=[]
-            output = llm.create_chat_completion(
             messages=[
                 {
                     "role": "system",
                     "content": "Your role is to take markdown lines analyze line by line and paraphrase them to be professional project documentation in paragraphs and meaningful titles. It is forbidden to change or remove or add any information to the givens. Avoid generic titles"
-                },
-                {
-                    "role": "user",
-                    "content": f'{llm_input}'
                 }
-            ],
+            ]
+            if (custom_prompt) :
+                messages.append({
+                     "role": "system",
+                    "content": custom_prompt
+                })
+            messages.append({
+                "role": "user",
+                "content": f'{llm_input}'
+            })
+            output = llm.create_chat_completion(
+            messages = messages,
             temperature=0,
             top_p=0.7
             )
