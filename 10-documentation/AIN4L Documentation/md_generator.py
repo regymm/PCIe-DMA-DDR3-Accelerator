@@ -45,7 +45,7 @@ while (len(sep_lines)>10):# checking there is still retrieved output from the DB
                         chapter_title = ret_chap.group(1).strip() 
                         if(not file_opened):#if first title open new file
                             md_filename = f"./../generated_md/{chapter_title.replace(' ', '_')}.md" # for the generated from LLM
-                            md_file = open("./../generated_md/tmp.md", "w") 
+                            md_file = open("./../generated_md/direct_interpretation_doc.md", "w") 
                             file_opened = True
                         chapter_title_old = chapter_title
                         md_file.write('# ' + chapter_title + '\n')
@@ -80,7 +80,7 @@ if file_opened:
     chunk_size = 120#chunk size (if file is long)
     ret_chunks = 0
     ret_lines_tmp = []
-    tmp_md_file = open("./../generated_md/tmp.md" , "r")
+    tmp_md_file = open("./../generated_md/direct_interpretation_doc.md" , "r")
     new_md_file = open(md_filename , "w")
     new_md_file.write("**Disclaimer: The Documentation is AI-generated and may make mistakes**" + "\n" + "\n")
     for line in tmp_md_file: #looping on the static generated md lines
