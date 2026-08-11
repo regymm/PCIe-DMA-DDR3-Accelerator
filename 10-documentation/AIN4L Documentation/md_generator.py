@@ -58,7 +58,7 @@ while (len(sep_lines)>10):# checking there is still retrieved output from the DB
                     if re.match(r'^\[line \d+\]:', line):
                         note = re.sub(r'^\[line \d+\]:\s*', '', line)
                         note = re.sub(r'\((.*?)\)', r'\1', note)
-                        md_file.write(note + "\n\n")
+                        md_file.write(note + "\n")
 if file_opened:
     md_file.close()
 
@@ -67,8 +67,10 @@ if file_opened:
 #-------------------------------------------------------------------------------------#
 # Adding the LLM Feature
 #instantiating the local LLM
-if (sys.argv[2]):
+if (len(sys.argv) > 2 and sys.argv[2]):
     custom_prompt = sys.argv[2]
+else:
+    custom_prompt = None 
 if file_opened:
     llm = Llama(
         model_path="./models/qwen2.5-3b-instruct-q4_k_m.gguf",
