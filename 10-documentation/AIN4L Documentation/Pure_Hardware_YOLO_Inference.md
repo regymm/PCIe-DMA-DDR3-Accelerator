@@ -113,6 +113,7 @@ The post-processing module, named yolo_post, is implemented using Verilog. Veril
 
 The system's implementation was carried out using Jupyter Notebooks for most of the flow. Colab Cloud was used for training and exporting the model, provisioned by Google. After training, the QONNX file, representing the quantized neural network, was derived from the trained model. The QONNX file was delivered to FINN for transformations, which involved eliminating floating-point operations and converting NN layers to hardware conversions. FINN Framework enabled these transformations and checking, with transformations checking preceding IP generation. The parallelism degree of the accelerator was determined by the designer, and the clock frequency was set to 150 MHz, sufficient for real-time calculations. The FINN flow involves running Jupyter Notebooks on a local host. The post-processing is handled by the yolo_post module, which involves no floating-point operations and uses Verilog functions for code tidying.
 
+<p align="center">
 <img src="./imgs/img10yolo.png" >
 <br>
 <em>Figure 10: FINN overview viewed on <span> <a src="https://github.com/markburgess/SSTorytime/blob/main/docs/http_server.md">SSTorytime</a> </span> knowledge browser</em>
@@ -131,6 +132,7 @@ The system demonstrates exceptional performance in real-time processing, achievi
 - **Zynq UltraScale+ MPSoC (ZCU102)**: The system achieves an inference rate of 67 FPS, indicating its robustness and efficiency in processing tasks in real-time.
 - **Pynq-Z2**: On the other hand, the system operates at a lower rate of 18 FPS, which is still significant for real-time applications and demonstrates the system's versatility across different hardware platforms.
 
+<p align="center">
 <img src="./imgs/img11yolo.png" >
 <br>
 <em>Figure 11: FPS results viewed on <span> <a src="https://github.com/markburgess/SSTorytime/blob/main/docs/http_server.md">SSTorytime</a> </span> knowledge browser</em>
