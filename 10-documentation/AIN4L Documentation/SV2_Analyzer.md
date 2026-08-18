@@ -7,7 +7,7 @@ This work introduces the SV2 Analyzer framework, designed to accelerate the digi
 The work was published in the first round of the IEEE International Conference on Smart Sustainable Systems for Computer and Engineering Applications (3SCEA) held in Cairo, Egypt. The author, Mohamed Khaled, considered the sustainability of the tool, ensuring it is not only beneficial for engineers but also accessible and developable for everyone concerned with its use.
 
 <p align="center">
-  <img src="./imgs/tocyolo.png" >
+  <img src="./imgs/tocsv2.png" >
   <br>
   <em>Figure 1: Table of Contents for the original notes viewed on <span> <a src="https://github.com/markburgess/SSTorytime/blob/main/docs/http_server.md">SSTorytime</a> </span> knowledge browser</em>
 </p>
