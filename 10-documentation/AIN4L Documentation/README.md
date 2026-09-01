@@ -102,7 +102,7 @@
 
 <p>Moreover, additional feature is provided to users who don't love AI. In the same path: <code>SSTorytime/generated_md/</code>, you can find a file called <code>your_chapter_name_direct_Interpretation.md</code> This file contains all your N4L notes in human readable text i.e. with direct replacement N4L arrows with their meaning. This should allow you to inspect your notes how they look like in human-readable text and also to evaluate the generated markdown from the LLM</p>
 
-**The AI-generated file has a disclaimer to inform users that this very document hasn't revised by the project author yet. An issue that might be common is that the LLM can replace the provided link in the original notes with either a different or a broken one. Thus, it is recommended to check carefully the AI output. This issue CAN'T happen with the direct-interpretation file as it is statically generated. After finishing your revision, you can safely remove the disclaimer from the markdown file**
+**The AI-generated file has a disclaimer to inform users that this very document hasn't been revised by the project author yet. An issue that might be common is that the LLM can replace the provided link in the original notes with either a different or a broken one. Thus, it is recommended to check carefully the AI output. This issue CAN'T happen with the direct-interpretation file as it is statically generated. After finishing your revision, you can safely remove the disclaimer from the markdown file.**
 
 <h3 style="color: #1c4e6c;">5. Security</h3>
 
