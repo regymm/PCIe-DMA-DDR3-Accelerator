@@ -1,19 +1,19 @@
 # N4L for Documentation (N4L4Doc)
-This article is to discuss a new technology for documenting projects, saving data and sharing knowledge with your colleagues. It's the first step in a long journey in the transformation of how engineers deal with knowledge itself and how experience would be more portable and shareable.
+This article discusses a new technology for documenting projects, preserving and sharing knowledge. It is the first step toward transforming how engineers deal with knowledge and how experience can be more portable and shareable.
 
-<p><strong>Document Author:</strong> <a href="https://github.com/m7md5303" style="color: #2c7da0; text-decoration: none;"> Mohamed Khaled</a></p>
+<p><strong>Author:</strong> <a href="https://github.com/m7md5303" style="color: #2c7da0; text-decoration: none;"> Mohamed Khaled</a></p>
 
-<strong>Disclaimer:</strong> This document assumes you are using Jan 2026 version of the <a href="https://github.com/markburgess/SSTorytime/tree/main" style="color: #2c7da0;">SSTorytime Project</a>
-## 0. Document Agenda
-1-Objective
+<strong>Disclaimer:</strong> This document assumes you are using the Jan 2026 version of the <a href="https://github.com/markburgess/SSTorytime/tree/main" style="color: #2c7da0;">SSTorytime Project</a>
+## 0. List of Contents
+1- Objective
 
-2-What is N4L?
+2- What is N4L?
 
-3- Diving to N4L syntax
+3- Diving into N4L syntax
 
-4- Hardware/Software Projects Documentation using N4L
+4- Documenting Hardware/Software Projects Using N4L
 
-5- Visualizing the graph
+5- Visualizing the Knowledge Graph
 
 6- Conclusion
 
@@ -24,11 +24,11 @@ This article is to discuss a new technology for documenting projects, saving dat
 9- Author
 
 ## 1. Objective
-This document aims to provide a full guide for hardware or software engineers and students for how to use the Notes for Learning (N4L) technology to reach an efficient methodology of documenting projects. The main goal is to change how engineers (students) think about their projects components and how they can be linked together to form a well-organized graph. This shall lead to the elimination of the need to write hundreds of pages of documentations for every single project.
+This document aims to provide a guide for hardware and software engineers and students on how to use the Notes for Learning (N4L) technology to establish an efficient methodology for documenting projects. The main goal is to change the way engineers and students think about how project components are related in order to create a well-organized graph representing these components. This should contribute to simplifying the documentation process without the need to write hundreds of pages of documentation.
 
-That said, it is not only about writing plain or special text for saving information or project characteristics. The document will also guide you to use the the `SSTorytime` technology to visualize connections between your project components and how they can be easily explored, shared among your colleagues and to remind you of whatever knowledge you need whenever you forget it or need some reasoning help.
+The document will also guide you on how to use the `SSTorytime` technology to visualize and explore connections between your project components. Additionally, the document will discuss how to make use of the proposed methodology to share knowledge with colleagues and to help users revisit knowledge they might have forgotten it or need reasoning for it.
 
-So, let's go step by step till having yourself as an expert in documenting projects with N4L. Herein after, we will mention our proposed methodology as `N4L4doc` which maps to `N4L for Documentation`
+Hereinafter, we will refer to our proposed methodology as `N4L4Doc`, which stands for `N4L for Documentation`.
 
 ## 2. What is N4L?
 In this section, we will provide a brief introduction for what N4L is and what they aim for. N4L stands for **Notes for Learning**. It is a special format for taking notes that was proposed in the **SSTorytime** project mentioned earlier.
@@ -95,7 +95,7 @@ To overcome other methodologies vulnerabilities, N4L provide:
 
 **No errosion**: Using N4L will make you avoid having to read old papers or even losing them and forgetting where you saved them at your office.
 
-## 3. Diving to N4L syntax
+## 3. Diving into N4L syntax
 
 At this step, you should be aware of:
 - Goal of the document
@@ -251,7 +251,7 @@ The N4L compiler will automatically replace your dittos with the last node, whic
 ```
 Now, you are ready for the upcoming steps and you have the essential knowledge for using N4L for documenting projects using N4L.
 
-## 4. Hardware/Software Projects Documentation using N4L
+## 4. Documenting Hardware/Software Projects using N4L
 
 After learning N4L basics, you are now ready for utilizing the proposed methodology of using this simple-syntax note-taking format in documenting projects and creating knowledge graphs out of your own notes. The methodology that we called before **N4L4Doc**. Now we can convert our main idea from **Your notes = Your Knowledge Graph** to **Your notes = Knowledge Graph for your Project**
 
