@@ -59,41 +59,41 @@ Nevertheless, creating such a graph manually would require you to draw many circ
 
 ### Back to N4L
 
-Now, after you have become more familiar with what knowledge graphs are, their pros and their potential problems, we can now talk confidently about how N4L can help you in that. As mentioned before, N4L is a special note-taking format. Hence, it is not a programming language and you don't have to learn complex for loops or nested if else statements.
+Now, after you have become more familiar with what knowledge graphs are, their pros and their potential problems, we can discuss how N4L can help to get the most out of these graphs and to overcome these potential problems. As mentioned before, N4L is a special note-taking format. Hence, it is not a programming language and you don't have to learn complex for loops or nested if else statements. 
 
-The role of N4L is to transform you own notes automatically into that organized knowledge graphs. That said, your notes haven't become plain text that you can hardly understand or provide reasoning for it. N4L helps you to make use of your notes to be helpful for you for storing your knowledge or when you revisit it through providing a reasonable form through which you can search for whatever object you want to study or what relations exist between it and other objects there.
+The role of N4L is to transform your own notes automatically into organized knowledge graphs. This facilitates the storage of your knowledge and helps reasoning it upon revisiting. As we will learn, you will be able to search for whatever object you want to study or what relations exist between it and other objects there.
 
-We can conclude the flow in one sentence : **Your notes = Your Knowledge Graph**
+We can conclude the flow in one sentence: **Your notes = Your Knowledge Graph**
 
-Nonetheless, we have said that N4L is a special note-taking format, what can be special about it, why can it be better than traditional methods and how can it be used in documentation ?
+Nonetheless, we have said that N4L is a special note-taking format, what can be special about it? Why can it be better than traditional methods? And how can it be used in documentation?
 
 ### Why do we write notes?
 
-Taking notes was always the way to save important knowledge you want to revisit later. Methods of noting differ from one person to other. One may choose traditional ways like pencil and paper. Others may prefer to use digital notes or digital handwritten. All of them aim to one thing...storing important information for revisiting.
+Taking notes has always been the way to save important knowledge you want to revisit later. Note-taking methods vary from one person to another. One may choose traditional ways like pencil and paper. Others may prefer to use digital notes or digital handwriting. All of them aim for one thing...storing important information for revisiting.
 
-Although these methods are widely used, they do suffer from many drawbacks. The most common problem for these methods is that after a long time of leaving your notes unvisited, when you come back, you can hardly remember the reason for why you have written that. You just find unorganized lines talking about a certain topic but they have become useless. You can't either understand them or know how they are acting with each other...just plain text.
+Although these methods are widely used, they do suffer from many drawbacks. The most common problem with these methods is that after a long time of leaving your notes unvisited, you can hardly remember the reason why you wrote them. You just find unorganized lines about a certain topic but they have become useless. You can neither understand them nor know how they are related to each other...just plain text.
 
-Another main problem is that you can't share your notes. This because of one of two reasons. The first one is that your notes hold mysterious keywords that you only can understand them. Hence, others will not understand them. The second reason is that if you couldn't interpret your **own** notes, others wouldn't.
+Additionally, you will realize you can't share your notes. This is because of one of two reasons. The first one is that your notes hold mysterious keywords that only you can understand. Hence, others will not understand them. The second reason is that if you couldn't interpret your **own** notes, others wouldn't.
 
-To sum up, we write notes for saving information for revisiting them later although they lack interpretability and sustainability.
+To sum up, we write notes to save information we can revisit later although they lack interpretability and sustainability.
 
 ### N4L Vs. Literature
 
-To overcome other methodologies vulnerabilities, N4L provide:
+To overcome vulnerabilities of other methodologies, N4L provides:
 
-**Interpretability** : No matter how complicated two objects are related, you will always find them connected with the suitable arrow making it easy for you to understand what you couldn't before through traditional ways.
+**Interpretability** : No matter how complicated the relation between two objects is, you can always find them connected by the suitable arrow making it easy for you to understand how objects are related which was hard to find out through traditional ways.
 
-**Sustainability**: No matter how long you leave your notes unvisited, whenever you are back, you will find reasoning for your notes and how objects there are related
+**Sustainability**: No matter how long you leave your notes unvisited, whenever you come back to them, you will find reasoning behind your notes and how objects within are related
 
-**Portability**: Through traditional noting, maybe not all of your friends/colleagues can understand your scribbles, but with N4L, they will not struggle to find out how objects in your notes are related and connected together, making it easy for everyone to make use of your notes.
+**Portability**: Through traditional note-taking, maybe not all of your friends/colleagues can understand your scribbles, but with N4L, they will not struggle to find out how objects in your notes are related, making it easy for everyone to interpret the idea of your notes.
 
-**Cost**: You don't have to pay for costly licenses for accessing the database that you create. You will not also be in the need for buying papers and pencils for writing down what you think of
+**Cost**: Note-taking with N4L helps in cutting down expenses related to having costly licenses for accessing the database that you create or buying paper and pencils for writing down what you are documenting
 
-**Auto-organized**: You don't have to draw tables for organizing your notes or even creating a new document so that each section would cover a special topic under your noting for some session or meeting you attend. As we have mentioned, N4L is transformed into a knowledge graph automatically through its built-in compiler in the ``SSTorytime Project`` That said, you don't need but any text-editor installed on your PC for writing your N4L text.
+**Auto-organized**: You neither have to create tables for organizing your notes nor create a specific file for each topic. As we have mentioned, N4L notes are transformed automatically into a knowledge graph through its built-in compiler found in the ``SSTorytime Project``. Hence, you only need a text-editor installed on your PC for writing your N4L text.
 
-**Editability**: unlike some methods where it is hard to add modifications or build on something good existing, N4L is allowing adding whatever edits you need and modifying it whenever you have to.
+**Editability**: Unlike some methods where it is hard to add modifications or build upon something existing, N4L allows adding whatever modifications you need whenever needed.
 
-**No errosion**: Using N4L will make you avoid having to read old papers or even losing them and forgetting where you saved them at your office.
+**No erosion**: Using N4L saves knowledge from being lost unlike old papers that you may lose or forget where you stored at your office.
 
 ## 3. Diving into N4L syntax
 
