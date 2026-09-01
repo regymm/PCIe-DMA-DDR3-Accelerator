@@ -26,36 +26,36 @@ This article discusses a new technology for documenting projects, preserving and
 ## 1. Objective
 This document aims to provide a guide for hardware and software engineers and students on how to use the Notes for Learning (N4L) technology to establish an efficient methodology for documenting projects. The main goal is to change the way engineers and students think about how project components are related in order to create a well-organized graph representing these components. This should contribute to simplifying the documentation process without the need to write hundreds of pages of documentation.
 
-The document will also guide you on how to use the `SSTorytime` technology to visualize and explore connections between your project components. Additionally, the document will discuss how to make use of the proposed methodology to share knowledge with colleagues and to help users revisit knowledge they might have forgotten it or need reasoning for it.
+The document will also guide you on how to use the `SSTorytime` technology to visualize and explore connections between your project components. Additionally, the document will discuss how to make use of the proposed methodology to share knowledge with colleagues and to help users revisit knowledge they might have forgotten or need reasoning for it.
 
 Hereinafter, we will refer to our proposed methodology as `N4L4Doc`, which stands for `N4L for Documentation`.
 
 ## 2. What is N4L?
-In this section, we will provide a brief introduction for what N4L is and what they aim for. N4L stands for **Notes for Learning**. It is a special format for taking notes that was proposed in the **SSTorytime** project mentioned earlier.
+In this section, we will provide a brief introduction to what N4L is and what it aims for. N4L stands for **Notes for Learning**. It is a special note-taking format that was proposed in the **SSTorytime** project mentioned earlier.
 
-Its goal was to build a technology that transforms our knowledge into organized database that introduces satisfying reasoning for users. This format is called **Knowledge Graphs**. Before we continue in talking about the N4L and what it can be used it, we shall firstly provide a brief introduction for the thing that is called **Knowledge Graphs**.
+Its goal is to build a technology that transforms our knowledge into an organized form that facilitates knowledge reasoning. This form is called **Knowledge Graph**. Before we continue discussing N4L and what it can be used for, we shall provide a brief introduction to **Knowledge Graphs**.
 
 ### What are Knowledge Graphs?
 
-Most of engineers are familiar with CSV and xlsx sheets where data are stored in a tabular form. Maybe columns represent the category of consumed resources (e.g. LUTs, BRAMs) or even latency and power. Whether you have noticed or not, this tables are a form of databases. So, storage of our data in whatever format, we can say confidently that we have our own database. This also includes binary databases and of course JSON databases. *You don't have to be familiar of all of that.*
+Most engineers are familiar with CSV and xlsx sheets where data are stored in a tabular form. Maybe columns represent the type of utilized resources in an FPGA project (e.g. LUTs, BRAMs) or even latency and power. Whether you have noticed or not, these tables represent a form of database. Other forms of storing data include binary databases and JSON-formatted databases. *You don't have to be familiar with all of that.*
 
 The question now is, what are Knowledge Graphs?
 
-Knowledge graphs are a form of storing data in the form of nodes and arrows. You can imagine it as a tree which has branches and leaves. The nodes in a certain graph represents objects in your database while the arrows represents the relations between these objects.
+Knowledge graphs are a way of storing data in nodes and arrows. You can initially imagine it as a tree which has branches and leaves. The nodes in a certain graph represent objects in your database while the arrows represent the relations between these objects.
 
 **What can we gain from such a setting?**
 
 Reasoning...
 
-AI experts know well that trees-like formulating of data provide clear explanation for how data is related to each other. Moreover, it facilitates searching for a certain note that you know under which category (parent node) it lies.
+AI experts know well that tree-like organization of data provides a clear explanation for how data is related to each other. Moreover, nodes whose category (parent node) is known become more searchable in that setting.
 
-Now look at the following figure. What if you got a tool in your hands that can modularize your project mess with many objects (nodes) in it in a well-organized graph that can provide reasoning for itself and explain how your project flows. Would be a great thing, wouldn't it?
+Now look at the following figure. What if you were provided a tool that can handle your project mess by creating a well-organized graph that gives reasoning for how your project flows. Would that be a great thing, wouldn't it?
 
 ![Knowledge Graph Image](./imgs/knowledgegrapheg.png)
 
-As the graph shows, objects (Nodes) are placed inside circles which express the nodes. These circles are related to each other in some way. The relations between them are expressed as arrows. For instance, the node `Apple` has a relation of `Type-of` with the node `Fruit`
+As the graph shows, objects (nodes) are placed inside circles. These circles are related to each other in some way. The relations between them are expressed as arrows. For instance, the node `Apple` has a relation of `Type-of` with the node `Fruit`.
 
-Nevertheless, creating such a graph with your hands would require you to draw many circles and to connect many arrows. Such a tiring process, isn't it? Imagine you mistakenly connected wrong nodes with each other or with adding a wrong arrow that misexpresses the relation between the nodes. Simply, you would get a corrupted database, the thing which you don't want to have.
+Nevertheless, creating such a graph manually would require you to draw many circles and to connect many arrows. This is a tiring process, isn't it? Moreover, what if you connected the wrong nodes unintentionally, or defined the wrong relation between two nodes? This would lead to the corruption of the database...
 
 ### Back to N4L
 
