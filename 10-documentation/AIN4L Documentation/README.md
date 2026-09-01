@@ -44,7 +44,7 @@
   <li style="margin: 8px 0;">LLM for generating the desired documentation</li>
 </ul>
 
-<p>Nevertheless, it is necessary to have the chapter you want to document uploaded to your knowledge database. This is mandatory for the tool to have a proper run otherwise, you will sadly get a printed error in your terminal.</p>
+<p>Nevertheless, it is necessary to have the chapter you want to document uploaded to your knowledge database. This is mandatory for the tool to have a proper run otherwise, you will  get a printed error in your terminal.</p>
 
 <p>As was mentioned in the introduction, the process is fully autonomous. Hence, what you have to do is to provide N4L notes for your project and give them to the tool through just uploading them to the database (which is what you are already doing as a typical user of the <strong>SSTorytime project</strong>)</p>
 
@@ -52,7 +52,7 @@
 
 <p>This conversion is through translating the arrows into their real meaning. That said, it is expected that the configuration files you have containing your arrows are having proper written arrows definitions.</p>
 
-<p>This retrieved text is chunked into 120 lines per chunk (at most) and provided to the LLM. This chunking process is for making sure everyone would be able to use the tool regardless how long his notes are. So that, if your notes are too long, you won't be worry of breaking the input tokens limit of the model.</p>
+<p>This retrieved text is chunked into 120 lines per chunk (at most) and provided to the LLM. This chunking process is for making sure everyone would be able to use the tool regardless how long his notes are. So, if your notes are too long, you won't worry about breaking the input tokens limit of the model.</p>
 
 <h5 style="color: #2c6280; font-size: 1.1rem; background: #eef2f7; display: inline-block; padding: 4px 16px; border-radius: 30px;">What happens next?</h5>
 
