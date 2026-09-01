@@ -1,7 +1,22 @@
 # ============================================================
-# Auto_N4L_2_Documentation
-# Author: Mohamed Khaled
-# GitHub: https://github.com/m7md5303
+    # Auto_N4L_2_Documentation
+    # Author: Mohamed Khaled
+    # GitHub: https://github.com/m7md5303
+    # Copyright (C) 2026  Mohamed Khaled
+
+    # This program is free software; you can redistribute it and/or modify
+    # it under the terms of the GNU General Public License as published by
+    # the Free Software Foundation; either version 2 of the License, or
+    # (at your option) any later version.
+
+    # This program is distributed in the hope that it will be useful,
+    # but WITHOUT ANY WARRANTY; without even the implied warranty of
+    # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    # GNU General Public License for more details.
+
+    # You should have received a copy of the GNU General Public License along
+    # with this program; if not, write to the Free Software Foundation, Inc.,
+    # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # ============================================================
 
 import re
@@ -45,7 +60,8 @@ while (len(sep_lines)>10):# checking there is still retrieved output from the DB
                         chapter_title = ret_chap.group(1).strip() 
                         if(not file_opened):#if first title open new file
                             md_filename = f"./../generated_md/{chapter_title.replace(' ', '_')}.md" # for the generated from LLM
-                            md_file = open("./../generated_md/direct_interpretation_doc.md", "w") 
+                            md_filename_direct_Interpretation = f"{chapter_title.replace(' ', '_')}_direct_Interpretation.md"
+                            md_file = open(f"./../generated_md/{md_filename_direct_Interpretation}", "w") 
                             file_opened = True
                         chapter_title_old = chapter_title
                         md_file.write('# ' + chapter_title + '\n')
