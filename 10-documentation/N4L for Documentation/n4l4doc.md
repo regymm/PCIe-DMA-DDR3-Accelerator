@@ -391,7 +391,7 @@ The capabilities don't stop here. You can view a table of content like text to h
 
 
 <h2>6. Conclusion</h2>
-<p>The article introduces new methodology for documenting Hardware and software projects with more sustainability and less vulnerability to traditional documentation methodologies' drawbacks. It discussed the way for having more reasonability of documentations and more portability in addition to eliminating the need of consuming much time and effort preparing long pages of documentations.</p>
+<p>The article introduces a new methodology for documenting hardware and software projects with more sustainability and less vulnerability to traditional documentation methodologies' drawbacks. It discusses the way for having more interpretability of documentations and more portability in addition to eliminating the need of consuming much time and effort preparing long pages of documentations.</p>
 
 <h2 ">7. Funding</h2>
 
