@@ -103,14 +103,13 @@ At this step, you should be aware of:
 - Traditional noting flaws
 - Pros of N4L over literature
 
-However, these were only abstract and theoretical words that we can't properly judge that we really have a useful technology in our hands. Now, this is the time to reveal technical knowledge about the proposed methodology and to discuss if it is really useful to replace other methodologies.
+However, these were only abstract and theoretical concepts that we can't properly judge whether we are really dealing with a useful technology. Now, this is the time to reveal the technical details about the proposed methodology and to discuss the effectiveness of replacing traditional methodologies.
 
 ### SSTorytime Project
 
-As mentioned earlier, N4L itself is not a separate project but it was created by the authors of `SSTorytime project`. Thus, to make the best out of the method, you are encouraged to firstly install the original project. As was noted before, it is assumed you are using the **Jan 2026** version of this project.
+As mentioned earlier, N4L itself is not a separate project but it was created by the authors of `SSTorytime project`. Thus, to make the most of the method, you are encouraged to firstly install the original project. As was noted before, it is assumed you are using the **Jan 2026** version of this project.
 
-The good news is that the SSTorytime project is open-source. That said, it can be freely installed with no required fees. Additionally, the source codes are provided on Github, it is pretty accessible for everyone who is interested to look at the source codes for understanding the project.
-
+The good news is that the SSTorytime project is open-source and the source code are accessible on GitHub.
 ### Installing the project
 
 As most of open-source projects on github, what you need is to clone the source code to the machine you intend to use the method on. The link of the project can be visited from <a href="https://github.com/markburgess/SSTorytime/tree/main">here</a>. But don't forget to clone the **Jan 2026** Version...why?
