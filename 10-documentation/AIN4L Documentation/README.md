@@ -25,13 +25,13 @@
 
 <h3 style="color: #1c4e6c; font-size: 1.5rem; margin-top: 30px;">1. Objective</h3>
 
-<p style="line-height: 1.6; color: #1f2f3a;">Welcome to the Auto_N4L_2_Documentation repository. This project aims to create an automated flow for generating projects documentation directly from the user N4L Notes stored in the database without the need for human involvement in any of the steps. That said, this technique would allow automating generation of documentation of projects without spending hours or days in trying to figure out what the best way is to describe your project.</p>
+<p style="line-height: 1.6; color: #1f2f3a;">Welcome to the Auto_N4L_2_Documentation repository. This project aims to create an automated flow for generating projects documentation directly from the user N4L Notes stored in the databases. The tool will help users generate documentation for projects without the need to spend days and hours in this process.</p>
 
-<p style="line-height: 1.6;">The flow of the tool is based on running a python script that parses the knowledge database containing the user N4L notes and autonomously generating the output documentation. That means that your <strong style="color: #1a4b6e;">N4L notes = Documentation for your project</strong></p>
+<p style="line-height: 1.6;">The flow of the tool is based on running a python script that parses the knowledge database containing the user N4L notes and generating the documentation from them. That means that your <strong style="color: #1a4b6e;">N4L notes = Documentation for your project</strong></p>
 
 <h3 style="color: #1c4e6c;">2. Tool Accesibility</h3>
 
-<p>As shown in the next figure, the conversion tool is fully open-source without employing proprietary blocks. This should allow anyone to make use of the tool without worrying about obtaining costly licenses for having the tool service. Starting from the imported python libraries used in the tool and even the employed LLM, all of them are open-source.</p>
+<p>As shown in the next figure, the conversion tool is fully open-source without employing proprietary blocks. Starting from the imported python libraries used in the tool and even the employed LLM, all of them are open-source.</p>
 
 <img src="./imgs/sysfig.png" style="max-width: 100%; border-radius: 20px; margin: 20px 0; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
 
@@ -44,19 +44,17 @@
   <li style="margin: 8px 0;">LLM for generating the desired documentation</li>
 </ul>
 
-<p>Nevertheless, it is necessary to have the chapter you want to document uploaded to your knowledge database. This is mandatory for the tool to have a proper run otherwise, you will  get a printed error in your terminal.</p>
+<p>Nevertheless, it is necessary to have the chapter you want to document uploaded to your knowledge database. This is mandatory for the tool to have a proper run otherwise, you will  get an error in your terminal.</p>
 
-<p>As was mentioned in the introduction, the process is fully autonomous. Hence, what you have to do is to provide N4L notes for your project and give them to the tool through just uploading them to the database (which is what you are already doing as a typical user of the <strong>SSTorytime project</strong>)</p>
+<p>The tool is responsible for retrieving your N4L notes and converting them into human-readable text. This the tool's responsibility you aren't asked to do anything.</p>
 
-<p>The tool is then responsible for retrieving your N4L notes and converting them into human-readable tools. This the tool responsibility you aren't asked to do anything.</p>
-
-<p>This conversion is through translating the arrows into their real meaning. That said, it is expected that the configuration files you have containing your arrows are having proper written arrows definitions.</p>
+<p>The conversion is through translating the arrows into their real meaning. So, it is expected that the configuration files containing your arrows have suitable meaning for the used arrows.</p>
 
 <p>This retrieved text is chunked into 120 lines per chunk (at most) and provided to the LLM. This chunking process is for making sure everyone would be able to use the tool regardless how long his notes are. So, if your notes are too long, you won't worry about breaking the input tokens limit of the model.</p>
 
 <h5 style="color: #2c6280; font-size: 1.1rem; background: #eef2f7; display: inline-block; padding: 4px 16px; border-radius: 30px;">What happens next?</h5>
 
-<p>Through a well-designed system prompt, the LLM is able to generate the final documentation. This happens through the providing these 120-line chunks to the model as batches and it generate the markdown file directly from these lines.</p>
+<p>Using a well-designed system prompt, the LLM is able to generate the documentation. This happens through providing these 120-line chunks to the model in batches and it generates the markdown file directly from these lines.</p>
 
 <h4 style="color: #235b7a;">3.1. Choosing Python Libraries</h4>
 
@@ -73,11 +71,11 @@
 
 <p>Choosing the LLM was one of the vital decisions to be taken for this system due to the famous tradeoff between the model size and the accuracy.</p>
 
-<p>The issue is if you want very high accuracy you would accordingly choose a big model, which will definitely add bad user experience to the tool</p>
+<p>The issue is that if you want very high accuracy you would accordingly choose a big model, which will definitely add bad user experience to the tool</p>
 
 <p>Choosing a small model would consequently lead to very bad output making the tool totally useless</p>
 
-<p>Hence, the used model to be employed in this system has to be satisfying the desired accuracy and with speed performance appropriate for typical PC users.</p>
+<p>Hence, the selected model for this system has to be satisfying the desired accuracy and with speed performance appropriate for typical PC users.</p>
 
 <p>Thus, the chosen model is <code style="background: #1e2a32; color: #eef4fc; padding: 2px 8px; border-radius: 8px;">Qwen/Qwen2.5-3B-Instruct-GGUF</code> for:</p>
 
@@ -92,17 +90,17 @@
 
 <ul>
   <li><strong style="color: #1a4b6e;">N4L Notes uploaded to the database</strong>: This is a crucial requirement for the tool to work properly as the software expects the target chapter is already uploaded to the database. In case you were targetting an N4L chapter that doesn't exist in the database, the code will simply exit due to the retrieval error.</li>
-  <li><strong style="color: #1a4b6e;">Notes Retrieval</strong>: Given that the n4L notes were properly uploaded to the database, the software here statically converts all the notes under the target chapter into human readable text. This function is built on the top of the SearchN4L API provided in the SSTorytime project.</li>
+  <li><strong style="color: #1a4b6e;">Notes Retrieval</strong>: Given that the n4L notes were properly uploaded to the database, the software statically converts all the notes under the target chapter into human readable text. This function is built on the top of the SearchN4L API provided in the SSTorytime project.</li>
   <li><strong style="color: #1a4b6e;">LLM Role</strong>: In this stage, the retrieved text is chunked into 120 lines/chunk and introduced to an open source quantized LLM: <code>Qwen/Qwen2.5-3B-Instruct-GGUF</code>. The model is responsible for generating the final markdown file that represents the project documentation</li>
 </ul>
 
 <h3 style="color: #1c4e6c;">4. Getting the final output</h3>
 
-<p>Now, after you have gone through the full process, you would be excited to see how your documentation looks like. <strong style="background: #eef2f7; padding: 2px 8px; border-radius: 8px;">The output should appear in <code>SSTorytime/generated_md/</code> with file name: your_chapter_name.md</strong> . That said, your documentation doesn't lie far from your hands as some tools do, this tool generate the documentation under the same root where the <code>SSTorytime Project</code> is installed in your device.</p>
+<p>Now, after you have gone through the full process, you would be excited to see how your documentation looks like. <strong style="background: #eef2f7; padding: 2px 8px; border-radius: 8px;">The output should appear in <code>SSTorytime/generated_md/</code> with file name: your_chapter_name.md</strong> . 
 
 <p>Moreover, additional feature is provided to users who don't love AI. In the same path: <code>SSTorytime/generated_md/</code>, you can find a file called <code>your_chapter_name_direct_Interpretation.md</code> This file contains all your N4L notes in human readable text i.e. with direct replacement N4L arrows with their meaning. This should allow you to inspect your notes how they look like in human-readable text and also to evaluate the generated markdown from the LLM</p>
 
-**The AI-generated file has a disclaimer to inform users that this very document hasn't been revised by the project author yet. An issue that might be common is that the LLM can replace the provided link in the original notes with either a different or a broken one. Thus, it is recommended to check carefully the AI output. This issue CAN'T happen with the direct-interpretation file as it is statically generated. After finishing your revision, you can safely remove the disclaimer from the markdown file.**
+**The AI-generated file has a disclaimer to inform users that this very document hasn't been revised by the project author yet. An issue that might be common with the AI output is that the LLM can replace the provided link in the original notes with either a different or a broken one. Thus, it is recommended to check carefully the AI output. This issue CAN'T happen with the direct-interpretation file as it is statically generated. After finishing your revision, you can safely remove the disclaimer from the markdown file.**
 
 <h3 style="color: #1c4e6c;">5. Security</h3>
 
@@ -144,12 +142,12 @@
 
 <p>You may run the python script differently in case of using different OS from Ubuntu 22.04., just be sure you have written the correct chapter name</p>
 
-<p><strong>Example 1 Output</strong>: <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/Pure_Hardware_YOLO_Inference.md" style="color: #2c7da0;">Here</a> It is generated from this <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/eayolo.n4l" style="color: #2c7da0;">notes file</a></p>
+<p><strong>Example 1 Output</strong>: <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/Pure_Hardware_YOLO_Inference.md" style="color: #2c7da0;">Here</a> It is generated from this <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/eayolo.n4l" style="color: #2c7da0;">notes file</a>  and this is the direct-interpretation <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/Pure_Hardware_YOLO_Inference_direct_Interpretation.md" style="color: #2c7da0;">output</a>  </p> 
 
-<p><strong>Example 2 Output</strong>: <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/SV2_Analyzer.md" style="color: #2c7da0;">Here</a> It is generated from this <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/sv2_analyzer.n4l" style="color: #2c7da0;">notes file</a></p>
+<p><strong>Example 2 Output</strong>: <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/SV2_Analyzer.md" style="color: #2c7da0;">Here</a> It is generated from this <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/sv2_analyzer.n4l" style="color: #2c7da0;">notes file</a>  and this is the direct-interpretation <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/SV2_Analyzer_direct_Interpretation.md" style="color: #2c7da0;">output</a>  </p>
 
-The example outputs markdown files were not modified by any human intervention except through:
-- Repairing any broken/missing link
+The example Markdown outputs files were not modified by any human intervention except through:
+- Repairing any broken/missing link(s)
 - Adding snippets with their captions from the knowledge browser for demonstrating the usage of visualized knowledge graphs for projects documentation
 
 <h3 style="color: #1c4e6c;">8. Funding</h3>
