@@ -172,17 +172,17 @@ And of course, you are free to add more than one section to your document.
 
 ### Back to N4L Arrows
 
-We have left behind some few but important points regarding N4L arrows and in this sub section it is the time to discuss them. Again, arrows in knowledge graphs are the relations between the nodes. So, how to include them properly in your N4L file?
+We have left behind a few but important points regarding N4L arrows and in this subsection it is the time to discuss them. Again, arrows in knowledge graphs are the relations between the nodes. So, how do you include them properly in your N4L file?
 
-The transformation of the N4L notes into a knowledge graph is done through a compiler provided with the `SSTorytime Project` Thus, you may consider caring about adding arrows to the notes properly. The steps is pretty simple as usual with the whole method.
+Generation of the knowledge graph from the N4L notes is through a compiler provided with the `SSTorytime Project`. The process of adding the proper arrows to the notes is pretty simple as usual with the whole method.
 
-In the root directory after cloning the project you will find under `./SSTconfig/` 6 files of extension `.sst`. We only care about only four of them. These four are the database of available arrows to be used in your N4L file. We will also discuss how you can add your own arrows to them.
+In the root directory after cloning the project, you will find 6 files of extension `.sst` under `./SSTconfig/`. We only care about four of them. These four are the database of available arrows to be used in your N4L file. We will also discuss how you can add your own arrows to them.
 
-**1-arrows-NR-0.sst**: This file is containing arrows that expresses proximity or similarity between nodes. The meaning of each arrow is shown besides each arrow inside the file. You are free to change/delete or add new arrows. Nevertheless, when you edit these `.sst` files you have to be strict with how they are written in these configuration files. The same way as they are shown in the next figure
+**1-arrows-NR-0.sst**: This file is containing arrows that express proximity or similarity between nodes. The meaning of each arrow is shown beside each arrow inside the file. You are free to change/delete or add new arrows. Nevertheless, when you edit these `.sst` files you have to be careful about what to write in these configuration files. The way of writing should be the same way as they are shown in the next figure
 
 ![NR](./imgs/arrow1.png)
 
-So, to make use of one of these available relations or if you added a relation belonging to this very category all what you need is to embed the syntax of this arrow inside your notes file.
+So, to make use of one of these available relations or if you added a relation belonging to this very category all you need is to embed the syntax of this arrow inside your notes file.
 
 Back to Gabriel and Ahmed we can say
 ```N4L
@@ -192,15 +192,15 @@ You should know from the snippet that this means
 ```
 Gabriel looks like Ahmed
 ```
-All N4L arrows are used in the same way you just add them in your note line and then you would have a relation added between the two nodes in your text.
+All N4L arrows are used in the same way: you just add them in your note line and then you would have a relation added between the two nodes in your text.
 
 **2-arrows-LT-1.sst**: This is the second member of the 4 files containing the database of the arrows used in N4L. Its role is to contain arrows (relations) expressing `lead to` and `consequences` relations. A snippet from the file is in the following figure
 
 ![NR2](./imgs/arrow2.png)
 
-You should have noticed that this snippet is different from the first one through having two columns of arrows. You should also notice that the left column is starting with `+` and the second one is starting with `-`. The reason is that some relations have two directions: Forward and Backward
+You should have noticed that this snippet is different from the first one through having two columns of arrows. You should also notice that the left column starts with `+` and the second one starts with `-`. The reason is that some relations have two directions: Forward and Backward
 
-In other words, Gabriel **remove** the error from the code or I can say the error **is removed by** Gabriel. That means that the relation `remove` can have two directions forward and backward. This is why you can find the arrows are present in two arrows in the LT file. Because these relations have the possibility to be going forward or backward. This should direct you when adding your own arrows in this file to include the forward direction of such a relation and its backward pair.
+In other words, Gabriel **removes** the error from the code or I can say the error **is removed by** Gabriel. That means that the relation `remove` can have two directions forward and backward. This is why you can find relations can be represented by two arrows in the LT file. Because these relations have the possibility to go forward or backward. This should direct you when adding your own arrows in this file to include the forward direction of such a relation and its backward pair.
 
 Additional point is that adding these type of arrows (2-direction arrows) would differ in nothing from adding arrows from the NR files. Hence, we can say normally:
 ```N4L
@@ -210,21 +210,21 @@ And the backward form:
 ```N4L
 The error (rem-by) Gabriel
 ```
-Pretty easy, isn't it? This one of the good things about N4L, you don't have to have software experience to be able to design your graph or write down your own notes
+Pretty easy, isn't it? This is one of the good things about N4L, you don't have to have software experience to be able to design your graph or write down your own notes
 
 **3-arrows-CN-2.sst**: This file contains relations expressing the containing relations and those used for enclosure. So, this one is also under the umbrella of files having bi-directional relations where you can say a jar contains the water or the water is contained by the jar. This file format is the same as the LT one as mentioned earlier
 
-**4-arrows-EP-3.sst**: The last one of the group is for describing properties for objects. For instance, the relation between a book and its author. This is a property of the book being authored by X. Consequently, you can say X is author of the book.
+**4-arrows-EP-3.sst**: The last one in the group is for describing properties of objects. For instance, the relation between a book and its author. This is a property of the book being authored by X. Consequently, you can say X is the author of the book.
 
-Hence, this type of arrows is also bi-directional and as the previous two, it has the 2-column format. And as all the four files containing the N4L arrows, nothing in the syntax of usage of arrows inside them is different inside the N4L file.
+Hence, this type of arrows is also bi-directional and as the previous two, it has the 2-column format. Additionally, any arrow used from any of the 4 files is added the same way to the notes file
 
-For these 4 files, you are free to add whatever relations you think they are appropriate for your note, but make sure firstly that you are adding them under the correct category (suitable .sst file)
+For these 4 files, you are free to add whatever relations you think are appropriate for your notes, but make sure first that you are adding them under the correct category (suitable .sst file)
 
 ### Beautifying your notes
 
 You should be ready now for the basic writing of N4L notes. However, there are two points that should be mentioned to improve your experience with N4L
 
-**1-dittos ("):** This symbol `"` can make your noting much easier if you knew what it can provide. This symbol `"` acts as a second instance from the multi-appearing nodes.
+**1-dittos ("):** This symbol `"` can make your noting much easier if you know what it can provide. This symbol `"` acts as a placeholder for the last mentioned source node. This helps with the multi-appearing nodes as no need to rewrite them each time they appear in the text.
 
 For example, if you want to describe two relations sourcing from Ahmed, in normal flow you would write:
 
@@ -232,38 +232,38 @@ For example, if you want to describe two relations sourcing from Ahmed, in norma
 Ahmed (relation1) object1
 Ahmed (relation2) object2
 ```
-This can be annoying specially if they were more than 2 consecutive relations, what if they were 5 or 10?!
+This can be annoying especially if they are more than 2 consecutive relations. What if there were 5 or 10?!
 
-Thus, the N4L allows for compacting this many instances of the same object acting the source for more than one consecutive relations
+The N4L allows for compacting these multi-appearances with the help of dittos.
 
 Hence, you would write the previous example as:
 ```N4L
 Ahmed (relation1) object1
   "   (relation2) object2
 ```
-The N4L compiler will automatically replace your dittos with the last node, which is in this case "Ahmed"
+The N4L compiler will automatically replace your dittos with the last node, which in this case is "Ahmed"
 
-**2-Comments:** Often, you may want to add some comments to yourself out of that text you want to store in the database. N4L provides two methods for writing commented lines inside the file:
+**2-Comments:** Often, you may want to add some comments to yourself while not including them in text you want to store in the database. N4L provides two methods for writing commented lines inside the file:
 
 ```N4L
 # First method
 // Second method
 ```
-Now, you are ready for the upcoming steps and you have the essential knowledge for using N4L for documenting projects using N4L.
+Now, you are ready for the upcoming steps and you have the essential knowledge for using N4L for documenting projects.
 
 ## 4. Documenting Hardware/Software Projects using N4L
 
-After learning N4L basics, you are now ready for utilizing the proposed methodology of using this simple-syntax note-taking format in documenting projects and creating knowledge graphs out of your own notes. The methodology that we called before **N4L4Doc**. Now we can convert our main idea from **Your notes = Your Knowledge Graph** to **Your notes = Knowledge Graph for your Project**
+After learning N4L basics, you are now ready to use N4L4Doc in documenting projects and creating knowledge graphs out of your own notes. Now we can upgrade our main idea from **Your notes = Your Knowledge Graph** to **Your notes = Knowledge Graph for your Project**
 
-Once you are confident using the basics we discussed earlier, using N4L for documentation can be a piece of cake for you...in just few steps.
+Once you are confident using the basics we discussed earlier, using N4L for documentation can be a piece of cake for you...in just a few steps.
 
 ### Project title
 
-Setting the title for your project is the first step you have to do in your notes file. You should have learnt earlier how to create a title for your file. So for your file, the first thing would be
+Setting the title for your project is the first step you have to do in your notes file. You should have learnt earlier how to create a title for your file. So for the documentation context, the first thing would be
 ```N4L
 - Project title
 ```
-In this explanation we will discuss technical examples, so you may find some technical words that you shouldn't be aware of all of them but just knowing how to map this methodology to your project. For our example we will write:
+In the following discussed examples, you may find some technical words that you may not be familiar with all of them but you just have to understand how to map the methodology to your project. For our example, we will write:
 ```N4L
 - Pure Hardware YOLO Inference
 ```
