@@ -136,7 +136,7 @@ You may notice that the final markdown file may consist of sparse lines rather t
 
 ## 5. Automating the process
 
-In case you feel this process can sound tedious, you can visit <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/tree/main/10-documentation/AIN4L%20Documentation">this project</a> for a software tool for automatically converting the N4L file stored in the database directly into a project documentation in markdown format.
+In case you feel this process can sound tedious, you can visit <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/tree/main/10-documentation/AIN4L%20Documentation">this project</a> for a software tool for automatically converting the N4L file stored in the database directly into Markdown project documentation in markdown format.
 
 <h2 ">6. Funding</h2>
 
