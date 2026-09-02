@@ -49,7 +49,7 @@ Reasoning...
 
 AI experts know well that tree-like organization of data provides a clear explanation for how data is related to each other. Moreover, nodes whose category (parent node) is known become more searchable in that setting.
 
-Now look at the following figure. What if you were provided a tool that can handle your project mess by creating a well-organized graph that gives reasoning for how your project flows. Would that be a great thing, wouldn't it?
+Now look at the following figure. What if you were provided a tool that can handle your project mess by creating a well-organized graph that gives reasoning for how your project flows. It would be a great thing, wouldn't it?
 
 ![Knowledge Graph Image](./imgs/knowledgegrapheg.png)
 
