@@ -155,7 +155,7 @@ The example Markdown output files were not modified by any human intervention ex
 <p>At some cases, the user may want to add a custom prompt from his side for different purposes. It can be added to direct the LLM to generate the output in a certain tone or may be instructing the LLM to emphasize certain information in the documentation. For addressing such an issue, the tool allows the user to introduce this (optional) prompt to the LLM within the same command as follows:</p>
 
 <pre style="background: #1e2a32; color: #eef4fc; padding: 16px; border-radius: 16px;">
-<code style="background: transparent; color: #eef4fc;">python3 md_generator.py <your_chapter_name> "custom prompt"</code>
+<code style="background: transparent; color: #eef4fc;">python3 md_generator.py <your_chapter_name>"custom prompt"</code>
 </pre>
 <p>The custom prompt is to be confined between double quotes as shown</p>
 
