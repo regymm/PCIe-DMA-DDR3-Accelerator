@@ -271,7 +271,7 @@ Now, we have set the chapter title for the further notes we are going to write i
 
 ### Creating Sections
 
-A chapter inside N4L file consists of sections. Each section is covering a certain point the user want to document. e.g. Some software function or a certain hardware IP. So, each section is acting like a room in an apartment. Sections also require creating titles as discussed. This can be like
+A chapter inside N4L file consists of sections. Each section covers a certain point the user want to document. e.g. Some software function or a certain hardware IP. So, each section is acting like a room in an apartment. Sections also require creating titles as discussed. This can be like
 ```N4L
 :: Target Hardware ::
 //
@@ -284,28 +284,28 @@ A chapter inside N4L file consists of sections. Each section is covering a certa
 ```
 **Best-practice note**: It is recommended to add brief description after the section title describing what is intended by this section...in normal English.
 
-Yes, it is allowed to write normal text in an N4L file. You aren't restricted to only writing nodes and arrows. You can write whatever you want in English to make your N4L file more interpretable and more easier for you when you revisit to remember important information you expect to be looking for later. However, only nodes created will be added to the graph.
+Yes, it is allowed to write normal text in an N4L file. You aren't restricted to only writing nodes and arrows. You can write whatever you want in English to make your N4L file more interpretable and easier for you when you revisit to remember important information you expect to be looking for later. However, only nodes created will be added to the graph.
 
 ### Creating Relations
 
-This is the most important procedure for getting your documentation valid and this is what can cause your documentation to be either good or bad. As here, you are drawing the graph and connecting the nodes.
+This is the most important procedure for getting your documentation clean. This step is what can cause your documentation to be either good or bad. As in this step, you are drawing the graph and connecting the nodes.
 
 #### Understanding the Project
-Although it can appear as a naive step, but actually, this is the most important step in drawing the graph. A project that you can't understand, you will not be able to write a good documentation for it or create a well-organized knowledge graph expressing it. So, at this step, you have to understand your project, know its components and their roles, the done tests and how they were judged, the participating team and what tool were used. This step should provide you with essential data in your mind to write it down in a proper way in N4L format for creating the best possible knowledge graph out of your project.
+Although it can appear as a naive step, this is the most important step in drawing the graph. If you can't understand the project, you will not be able to write a good documentation for it or create a well-organized knowledge graph expressing it. So, at this step, you have to understand your project, know its components and their roles, the tests that were performed and how their results were judged, the participating team and what tools were used. This step should provide you with essential data in your mind to write it down in a proper way in N4L format for creating the best possible knowledge graph out of your project.
 
 #### Extracting Nodes
-Now, you should be aware of your projects components, the procedure now is to extract these components whether they are objects (e.g. software function or hardware IP) or events (e.g. External interrupt, ALU overflow). These will be the nodes of you graph that you have to be aware of their role and impact in your project.
+Now, you should be aware of your project's components. The next step is to extract these components, whether they are objects (e.g. software function or hardware IP) or events (e.g. External interrupt, ALU overflow). These will be the nodes of your graph that you have to understand their role and impact in your project.
 
 #### Connecting Nodes
 What you have in your hands so far:
 - Strong understanding of your project
 - The objects/events constructing this project
 
-The duty now is to connect these nodes. Hence, from your understanding of the project, you should be aware of how these nodes are related. For instance, if you have a PCB that is connected to 5V power source. Then, we have a node which is PCB and another node which is the 5V. And they are connected with relation describing having a source
+The duty now is to connect these nodes. Hence, from your understanding of the project, you should be aware of how these nodes are related. For instance, if you have a PCB that is connected to a 5V power source. Then, we have one node which is PCB and another one which is the 5V. And they are connected with relation describing having a source
 ```N4L
 PCB (hassource) 5V
 ```
-Another example, if your system calls an interrupt once the temperature exceeds 40 C. So, we have a node which is temperature interrupt, another node is this interrupt service routine and the relation between them which is the ISR call
+Another example, if your system calls an interrupt when the temperature exceeds 40 C. So, we have a node which is temperature interrupt, another node is this interrupt service routine and the relation between them which is the ISR call
 ```N4L
 Temperature Interrupt (call) interrupt service routine
 ```
@@ -321,15 +321,15 @@ What we have so far:
 - Allowance of writing plain English for adding interpretability.
 - Allowance of writing comments to ourselves
 
-You don't need more than that for documenting a project. Once you put relevant relations to their relevant section and give each section a proper title with adding useful explaining English text and good reminding comments, you should now have a complete proper documentation for your project in N4L format.
+You don't need more than that for documenting a project. Once you put relevant relations to their relevant section and give each section a proper title with adding useful explanatory English text and useful reminder comments, you should now have a complete proper documentation for your project in N4L format.
 
 Unfortunately, we haven't seen a complete example yet, right?
 
-Don't worry, from <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/eayolo.n4l">here</a> You can find a complete documentation in N4L Only for  <a href="https://ieeexplore.ieee.org/document/11270746">this project</a>
+Don't worry, from <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/eayolo.n4l">here</a> You can find a complete documentation in N4L for  <a href="https://ieeexplore.ieee.org/document/11270746">this project</a>
 
 ## 5. Visualizing the graph
 
-so far, we haven't been exposed to visualizing the graph or even seen the outcomes of converting a project to a knowledge graph that we were talking about at the beginning of this document. In this section, we are going to discuss how we can make use of your notes and visualize the graoh we have created with our N4L notes based on the N4L4Doc Methodology
+so far, we haven't yet seen how to visualize the graph or even seen the result of converting a project to a knowledge graph that we were talking about at the beginning of this document. In this section, we are going to discuss how you can make use of your notes and visualize the graph you have created with your N4L notes based on the N4L4Doc Methodology
 
 As we have mentioned before, the following relative paths is assuming you are using the `Jan 2026` version of the SSTorytime project.
 
@@ -341,51 +341,51 @@ make ramdb
 For other OS, check the main repository of the SSTorytime documentation
 
 ### Compiling the notes
-AS you knew, for converting the N4L notes into a knowledge graph, the notes themselves have to pass a compiler to be ready to be uploaded to the database. The compiler binary lies in the `./src/` directory. Thus, for compiling your notes, you would run
+As you have known, for converting the N4L notes into a knowledge graph, the notes themselves have to pass a compiler to be ready to be uploaded to the database. The compiler binary lies in the `./src/` directory. Thus, for compiling your notes, you would run
 ```shell
 ./../src/N4L -v your_filename.n4l
 ```
-Why I stepped back in running this command. Because I am assuming you opened the shell terminal inside the `./examples/` directory or any folder lying directly under the root hierarchy.
+Why did I step back in running this command. Because I am assuming that you opened the shell terminal inside the `./examples/` directory or any folder lying directly under the root hierarchy.
 
-What is the `-v` flag? It stands for `verbose` So, if you have some errors in your file or recommendations for certain procedures to take to enhance your notes, you will find that appearing in the log output after running this command
+What is the `-v` flag? It stands for `verbose` So, if you have some errors in your file or recommendations for certain procedures to take to enhance your notes, you will find them in the log output after running this command
 
 ### Uploading the notes
-Everything is ready now. All what you have to do to be ready for accessing your graph is to upload the compiled notes into the database. This can be done simply through
+Everything is ready now. All you have to do to be ready for accessing your graph is to upload the compiled notes into the database. This can be done simply through
 ```shell
 ./../src/N4L -u -wipe your_filename.n4l
 ```
 Let me answer the expected questions:
 - Yes, the same N4L binary is used for both compiling and uploading
 - The `-u` flag is for uploading
-- The `wipe` flag is for wiping old versions of this notes if present in the database
-- I am still expecting you opened the shell terminal inside the `./examples/` directory or any folder lying directly under the root hierarchy.
+- The `-wipe` flag is for wiping old versions of these very notes if present in the database
+- I am still assuming you opened the shell terminal inside the `./examples/` directory or any folder located directly under the root hierarchy.
 
-Now, your database is ready with your knowledge graph that you have built with the N4L notes. But how to explore?
+Now, your database is ready with your knowledge graph that you have built with the N4L notes. But how do you explore it?
 
-This is pretty easy. ALL what you need is to run :
+This is pretty easy. All you need is to run :
 
 ```bash
 ./../src/http_server
 ```
-you will find a local host that appeared in your terminal when you open it you can find the knowledge graph is ready to explore.
+you will find a local host URL displayed in your terminal. When you open it, you will find the knowledge graph is ready to explore.
 
 ### Visualizing the notes
 
-After you open the local host, you will find an empty grid-like rectangle. This where the graph should appear (but it is still empty now). Additionally, you would find a search bar at the bottom of the screen. This is the controller of what appears on this page. Let's run a simple example on the file we shared earlier the `eayolo.n4l`
+After you open the local host, you will find an empty grid-like rectangle. This is where the graph should appear (but it is still empty now). Additionally, you would find a search bar at the bottom of the screen. This is the controller of what appears on this page. Let's run a simple example using the file we shared earlier the `eayolo.n4l`
 
-The project in that example utilized a framework called `FINN` If we want to know the relations between this framework and other objects in the project so we simply type in the searchbar
+The project in that example utilized a framework called `FINN` If we want to know the relations between this framework and other objects in the project so we simply type in the search bar
 `path from FINN` and you would directly get
 
 ![Knowledge Gr](./imgs/finn.png)
 ![Knowledge g](./imgs/finn_list.png)
 
-Isn't that impressive? Relations (arrows) sourcing from FINN is visualized in the grid screen making you trace them as connected nodes. Additionally, in the bottom, you can find a beautiful colorful text demonstrating the relations sourcing from the FINN Framework node. This what we can confidently call `Semantic Search` Where your search is no more about just finding where the object under concern lies but also what its role is and how it is connected with other objects.
+Isn't that impressive? Relations (arrows) originating from FINN is visualized in the grid screen allowing you to trace them as connected nodes. Additionally, in the bottom, you can find a beautiful colorful text demonstrating the relations originating from the FINN Framework node. This is what we can confidently call `Semantic Search` Where your search is no more about just finding where the object under concern lies but also what its role is and how it is connected with other objects.
 
-Additionally, you can retrieve your notes in English text. In other words, you can see how your notes look like after replacing the N4L arrows with their English meaning. How that can be? Again, from the search bar, you simply write `\notes \chapter {your chapter name} \context {your section name} (optional)` and you can find your notes appeared in an impressive way like the following snippet
+Additionally, you can retrieve your notes in English text. In other words, you can see how your notes look like after replacing the N4L arrows with their English meaning. How can that be? Again, from the search bar, you simply write `\notes \chapter {your chapter name} \context {your section name} (optional)` and you can find your notes displayed in an impressive way like the following snippet
 
 ![Example for clicking orange-colored titles in the ToC](./imgs/notes_search.png)
 
-The capabilities don't stop here. You can view a table of content like text to help you know what are components (sections) construct your notes. You simply type `\toc` in the search bar and you can directly get something like the following snippet
+The capabilities don't stop here. You can view a table of content like text to help you know what components (sections) construct your notes. You simply type `\toc` in the search bar and you can directly get something like the following snippet
 
 ![Knowledge Graph for the project](./imgs/tableofcontents.png)
 
