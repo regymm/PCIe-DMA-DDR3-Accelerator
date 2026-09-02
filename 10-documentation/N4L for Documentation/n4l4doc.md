@@ -75,7 +75,7 @@ Although these methods are widely used, they do suffer from many drawbacks. The 
 
 Additionally, you will realize you can't share your notes. This is because of one of two reasons. The first one is that your notes hold mysterious keywords that only you can understand. Hence, others will not understand them. The second reason is that if you couldn't interpret your **own** notes, others wouldn't.
 
-To sum up, we write notes to save information we can revisit later although they lack interpretability and sustainability.
+To sum up, we write notes to save information we can revisit later although traditional methods lack interpretability and sustainability.
 
 ### N4L Vs. Literature
 
