@@ -110,37 +110,38 @@ However, these were only abstract and theoretical concepts that we can't properl
 As mentioned earlier, N4L itself is not a separate project but it was created by the authors of `SSTorytime project`. Thus, to make the most of the method, you are encouraged to firstly install the original project. As was noted before, it is assumed you are using the **Jan 2026** version of this project.
 
 The good news is that the SSTorytime project is open-source and the source code are accessible on GitHub.
+
 ### Installing the project
 
-As most of open-source projects on github, what you need is to clone the source code to the machine you intend to use the method on. The link of the project can be visited from <a href="https://github.com/markburgess/SSTorytime/tree/main">here</a>. But don't forget to clone the **Jan 2026** Version...why?
+As with most open-source projects on github, what you need is to clone the source code to the machine you intend to use the method on. The project can be accessed from <a href="https://github.com/markburgess/SSTorytime/tree/main">here</a>. But don't forget to clone the **Jan 2026** version...why?
 
-`Using N4L4doc does not depend on the used version of SSTorytime However, the relative paths and commands used in this document would differ a little bit from whatever used in the future versions of the project. `
+`Using N4L4doc does not depend on the version of SSTorytime being used. However, the relative paths and commands used in this document would differ a little bit from those used in the future versions of the project. `
 
-Under the root directory of the project after being cloned, in the path of `./docs/GettingStarted.md`, you can find a complete guide on how to set everything to make you fully ready to use the project
+Under the root directory of the cloned project, at `./docs/GettingStarted.md`, you can find a complete guide on how to make the environment ready to use the project properly.
 
 ### Hello World
 
 After you have properly installed the project, you are ready to delve into writing your first notes using N4L...
 
-As you have known, **Your notes = Your Knowledge Graph** hence, when you are writing N4L notes, you have to consider that this text will be transformed into a graph. Why does that matter? Because the best-practice and the useful outcomes of using N4L depend on how good you are at writing what you know in knowledge-graph friendly N4L. Don't worry,things aren't going to be complex.
+As you have known, **Your notes = Your Knowledge Graph** hence, when you are writing N4L notes, you have to consider that this text will be transformed into a graph. Why does that matter? Because the best practices of using N4L depend on how good you are at writing what you know in knowledge-graph friendly N4L. Don't worry, things aren't going to be complex.
 
-**Let's go with the first step. Determining the objects.** As you have known, objects are future nodes, you may find they will be used exchangebly. Whatever the topic you are writing notes about, it will have either acting objects or impacting events. So, your duty here is to extract these objects/events from what you are writing about.
+**Let's go with the first step. Determining the objects.** As you know now, objects are nodes, thus, the two words can be found to be used interchangeably throughout the text. Whatever the topic you are writing notes about, it will have either acting objects or impacting events. So, your task here is to extract these objects/events from what you are writing about.
 
 For example, if you went to the supermarket to buy some fresh apples. What are the objects here?...
 
 - You (the buyer)
 - The fresh apples (what is being bought)
 
-Another one, if snowing led the traffic to be blocked, the extracted objects/events are:
+Another one, if snowing caused the traffic to be blocked, the extracted objects/events are:
 
 - Snowing (event)
 - traffic (object affected by the event)
 
 and so on...
 
-Be aware that these objects/events will be later your graph nodes.
+Be aware that these objects/events will later be your graph nodes.
 
-Knowledge graphs don't have free nodes thrown randomly in the space. Each node is connected with the related nodes through specific arrows. **Hence, we will now go with the arrows** Arrows are conceptually the relations between the nodes in the graph. Imagine that there are two friends in the school e.g. Gabriel and Ahmed. so the relation between these two boys is friendship. So, Gabriel is friend of Ahmed.
+Knowledge graphs don't have free nodes existing randomly in the space. Each node is connected with the related nodes through specific arrows (relations). **Hence, we will now go with the arrows** Arrows are conceptually the relations between the nodes in the graph. Imagine that there are two friends in the school, e.g. Gabriel and Ahmed. So, the relation between these two boys is friendship. So, Gabriel is a friend of Ahmed.
 That's it. Each boy is a node and the arrow is the friendship.
 
 But how to write that in N4L? Pretty easy...nodes don't require special syntax and arrows are just required to be put between round brackets. So, the N4L line for the earlier relation is simply:
@@ -149,13 +150,13 @@ But how to write that in N4L? Pretty easy...nodes don't require special syntax a
 Gabriel (isfriendof) Ahmed
 ```
 
-Why were there no spaces in the arrow text? And are we free to use whatever relation or are we restricted to few relations? That's to be discussed in future section in this document but before that it has to be noted that N4L provides extra feature over normal knowledge graphs which is **modularizing the notes**
+Why were there no spaces in the arrow text? And are we free to use whatever relation or are we restricted to a few relations? That's to be discussed in a future section in this document but before that it has to be noted that N4L provides an extra feature over normal knowledge graphs which is **modularizing the notes**
 
 ### Modularizing the notes
 
-N4L isn't just about writing bare relations under no context. But it allows the user to add a title for the whole document. Hereinafter, we would call that `Chapter title` conventionally.
+N4L isn't just about writing bare relations without context, as it also allows the user to add a title for the whole document. Hereinafter, we would conventionally call that `Chapter title`.
 
-Moreover, under the same chapter, we can divide our notes into sections. Thus, when you revisit your notes, you can easily know where what you are looking for lie from the relevant `section title`.
+Moreover, under the same chapter, we can divide our notes into sections. Thus, when you revisit your notes, you can easily know where to find what you are looking for from the relevant `section title`.
 
 How to add these titles to your N4L file?
 
