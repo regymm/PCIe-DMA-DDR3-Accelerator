@@ -2,61 +2,61 @@
 
 :: Idea start ::
 
-The project aims to provide pure-hardware solution for AI acceleration. This section tackles the very beginning of the project, its objective and the team structure
+The project aims to provide pure-hardware solution for AI acceleration. This section tackles the very beginning of the project, its objective and the team structure.
 
-The project was implemented by Our-team as a part of our graduation project in our bachelor year. Our-team consists of 6 members. We gave ourself name of "Electronic Aliens"
+The project was implemented by Our-team as a part of our graduation project in our bachelor year. Our-team consists of 6 members. We gave ourself name of "Electronic Aliens".
 
 The final goal we were targetting was to introduce a pure-hardware system that helps drivers in their cruise. We had the support from two supervisors where one of them was from our university and the other one was from the Electronics Research Institute.
 
-Our-team (grp-of) 6 Members
-    "    (name) Electronic Aliens
-    "    (prop) System that (succ1) in helping drivers to automate the cruise
-    "    (suportby) two supervisors
+Our-team (grp-of) 6 Members.
+    "    (name) Electronic Aliens.
+    "    (prop) System that (succ1) in helping drivers to automate the cruise.
+    "    (suportby) two supervisors.
 
-The goal of the project was to exclude software from computations and produce a pure hardware system capable of efficently assisting drivers
+The goal of the project was to exclude software from computations and produce a pure hardware system capable of efficently assisting drivers.
 
 Excluding software would allow us to achieve more parallelization. Additionally, we were eager to gain more experience with hardware systems.
 
-Excluding software (enables) more optimization
-        "          (enables) more hands-on experience with hardware
+Excluding software (enables) more optimization.
+        "          (enables) more hands-on experience with hardware.
 
 System was to involve AI block for detecting potential objects during the cruise. An example that has similar idea is Tesla Cars although it may employ software in its systems.
  
-Autonomous cars (e.g.) Tesla Cars
+Autonomous cars (e.g.) Tesla Cars.
 
 The goal of implementing the system required delivering an edge-computing pure-hardware device. The available hardware platforms are either FPGA or ASIC. IN both cases, the system shouldn't involve software intervention and it has to introduce an AI acceleration solution for autonomous cars.
 
-System (with) Hardware either FPGA or ASIC
-  "    (involves) no employed software
-  "    (enables) autonomous driving
-  "    (imply) deployment of AI on hardware
+System (chkli-it) Hardware either FPGA or ASIC.
+  "    (chkli-it) no employed software.
+  "    (chkli-it) autonomous driving.
+  "    (chkli-it) deployment of AI on hardware.
 
 :: Accessibility ::
 
-In this section, we would discuss the accessibility of the project codes
+In this section, we would discuss the accessibility of the project codes.
 
-The project codes is open-source on GitHub
+The project codes is open-source on GitHub.
 
-project codes (resource) github.com/m7md5303/pure-hardware-YOLO-inference
+project codes (resource) github.com/m7md5303/pure-hardware-YOLO-inference.
 
-open-source (enables) reproduction
-      "     (enables) receiving suggestions for improving the project
+open-source (enables) reproduction.
+      "     (enables) receiving suggestions for improving the project.
 
-Project Repository (includes) detailing Readme file for its structure
-        "          (includes) colab notebooks codes
-        "          (includes) Verilog code for post-processing unit
-        "          (includes) Systemverilog testbench for the system
+Project Repository (includes) detailing Readme file for its structure.
+        "          (includes) colab notebooks codes.
+        "          (includes) Verilog code for post-processing unit.
+        "          (includes) Systemverilog testbench for the system.
 
 :: License ::
 
 In this section the license associated with the project is discussed. Since the project is open-source, an appropriate open-source license was to be choosed. The used license is MIT license.
 
-project (ass) MIT License
+project (ass) MIT License.
 
 MIT license is one of the famous licenses for open-source projects and it is suitable for allowing for the project reusability and redistribution while preserving the authors rights.
 
-MIT License (in-grp) open-source famous licenses
-    "        (enables) reusability with preserving the authors rights
+MIT License (in-grp) open-source famous licenses.
+    "        (enables) reusability with preserving the authors rights.
 
 :: Literature Review ::
 
@@ -64,255 +64,255 @@ This section discusses some of algorithms our-team explored before going through
 
 Our-team decided to use FPGA as the target platform for hosting the project.
 
-Our-team (dec) using AI algorithm for autonomous vehicles
+Our-team (dec) using AI algorithm for autonomous vehicles.
 
-AI algorithm (dep-by) Our-team on FPGA
+AI algorithm (dep-by) Our-team on FPGA.
 
-Research (conducted) Our-team for getting the most suitable AI algorithm
+Research (conducted) Our-team for getting the most suitable AI algorithm.
 
-The done research revealed that Convolutioanl Neural Networks are efficient for Computer Vision Applications where it gives high accuracy with reasonable latency
+The done research revealed that Convolutioanl Neural Networks are efficient for Computer Vision Applications where it gives high accuracy with reasonable latency.
 
-Convolutional Neural Networks (knownfor) efficienct in Computer Vision Applications
-              "               (abbrev) CNN
+Convolutional Neural Networks (knownfor) efficienct in Computer Vision Applications.
+              "               (abbrev) CNN.
 
-CNN (use-for) detecting objects and classification
+CNN (use-for) detecting objects and classification.
 
-CNN has more than one flavor including Regional CNN that has higher accuracy but in the same time slower inference rate
+CNN has more than one flavor including Regional CNN that has higher accuracy but in the same time slower inference rate.
 
-R-CNN (abbrev) Regional CNN
-  "   (knownfor) producing accurate output
-  "   (knownfor) high latency
+R-CNN (abbrev) Regional CNN.
+  "   (knownfor) producing accurate output.
+  "   (knownfor) high latency.
 
-After some research, Our-team figured out YOLO network would be more efficient for our application
+After some research, Our-team figured out YOLO network would be more efficient for our application.
 
-YOLO is providing lower latency than traditional CNN while preserving satisfactory accuracy. This led our-team to choose YOLO as the target network
+YOLO is providing lower latency than traditional CNN while preserving satisfactory accuracy. This led our-team to choose YOLO as the target network.
 
-YOLO (enables) low latency inference
-  "  (enables) satisfactory accuracy
-  "   (sfor) You Only Look Once
+YOLO (enables) low latency inference.
+  "  (enables) satisfactory accuracy.
+  "   (sfor) You Only Look Once.
 
-The issue was choosing specific version of YOLO, as it has many flavors and versions
+The issue was choosing specific version of YOLO, as it has many flavors and versions.
 
-The choice (imply) hardware-friendly implementation
+The choice (imply) hardware-friendly implementation.
 
-This was a challenge because YOLO is more complex than CNN
+This was a challenge because YOLO is more complex than CNN.
 
 :: Target Hardware ::
 
-In this section, the used hardware as long as who provided it to us is discussed. The research has revealed also that ZCU102 can be very useful for hosting our system
+In this section, the used hardware as long as who provided it to us is discussed. The research has revealed also that ZCU102 can be very useful for hosting our system.
 
-Our-team (dec) to implement the system on ZCU102
+Our-team (dec) to implement the system on ZCU102.
 
-ZCU102 is available in Electronics Research Institute
+ZCU102 is available in Electronics Research Institute.
 
-Electronics Research Institute (abbrev) ERI
-                 "             (enables) usage of ZCU102 for Our-team
+Electronics Research Institute (abbrev) ERI.
+                 "             (enables) usage of ZCU102 for Our-team.
 
-ZCU102 is characterized by having high capabilities, high number of resources and having multi-processor system
+ZCU102 is characterized by having high capabilities, high number of resources and having multi-processor system.
 
-ZCU102 (knownfor) its high capabilities
-  "    (knownfor) being MPSoC
+ZCU102 (knownfor) its high capabilities.
+  "    (knownfor) being MPSoC.
 
-MPSoC (abbrev) Multi-Processor System-on-Chip
+MPSoC (abbrev) Multi-Processor System-on-Chip.
 
-AS the target for our-team was to use pure-hardware, the PS (sfor) Processing System side was not used 
+As the target for our-team was to use pure-hardware, the PS (sfor) Processing System side was not used.
 
-Our-team (dec) to use the PL part only of ZCU102
+Our-team (dec) to use the PL part only of ZCU102.
 
-PL (abbrev) Programmable Logic
-"  (means) FPGA side of the SoC
+PL (abbrev) Programmable Logic.
+"  (means) FPGA side of the SoC.
 
-Using the PL only is because Our-team excluded any software from computations
+Using the PL only is because Our-team excluded any software from computations.
 
 :: Block Diagram ::
 
-Here, we will discuss some details about the final system block diagram
+Here, we will discuss some details about the final system block diagram.
 
-The system is consisting of two pure-hardware blocks implying no software for the whole inference
+The system is consisting of two pure-hardware blocks implying no software for the whole inference.
 
-The two blocks are the network accelerator itself and the post-processing block. The System is having input interface of AXI-stream and output interface of AXI-stream also
+The two blocks are the network accelerator itself and the post-processing block. The System is having input interface of AXI-stream and output interface of AXI-stream also.
 
-Based on the previous information, it is confirmed that the System is not involving any software-dependent functions
+Based on the previous information, it is confirmed that the System is not involving any software-dependent functions.
 
-System (consists) accelerator and post-processing block
-  "    (source) of AXI-stream data
-  "    (source-of) Inference output in the form of AXI-stream
-  "    (imply) only hardware modules on FPGA
+System (consists) accelerator and post-processing block.
+  "    (source) of AXI-stream data.
+  "    (source-of) Inference output in the form of AXI-stream.
+  "    (imply) only hardware modules on FPGA.
 
-The input image is packed in AXI-Stream frames
+The input image is packed in AXI-Stream frames.
 
-AXI-Stream data (repr) input image
+AXI-Stream data (repr) input image.
 
 AXI-Stream is efficient for streaming applications as it has low control overhead. It is also used by most of XIlinx streaming IPs.
 
-Thus, Our-team decided to use it as the input and output interfaces for the System 
+Thus, Our-team decided to use it as the input and output interfaces for the System.
 
-AXI-Stream (knownfor) efficiency in image processing applications
-    "      (imply) low communication overhead
-    "      (used-by) most of Xilinx IPs
+AXI-Stream (knownfor) efficiency in image processing applications.
+    "      (imply) low communication overhead.
+    "      (used-by) most of Xilinx IPs.
 
-Our-team (dec) to use AXI-Stream as the System input and output interface
+Our-team (dec) to use AXI-Stream as the System input and output interface.
 
 The input image resolution is 416 x 416. It represents the road image form the driver view.
 
-input image (setof) 416 x 416 pixels
-    "       (repr) the road view
-    "       (setof) stream of bytes packed in AXI-Stream frames
+input image (setof) 416 x 416 pixels.
+    "       (repr) the road view.
+    "       (setof) stream of bytes packed in AXI-Stream frames.
 
-The overall output of the System is 13 signals called row_det signals. There is also a flag accompanied with these signals called detect_valid signal
+The overall output of the System is 13 signals called row_det signals. There is also a flag accompanied with these signals called detect_valid signal.
 
-Inference output (consists) 13 row_det signals and detect_valid bit
+Inference output (consists) 13 row_det signals and detect_valid bit.
 
-The 13 row_det signals represents a 13 x 13 matrix. This means that each one row_det signal is 13 bits representing a complete horizontal row in the matrix
+The 13 row_det signals represents a 13 x 13 matrix. This means that each one row_det signal is 13 bits representing a complete horizontal row in the matrix.
 
-13 row_det signals (repr) 13 x 13 grid 
+13 row_det signals (repr) 13 x 13 grid.
 
-one row_det signal (repr) 13 horizontal line of 13 x 13 grid
+one row_det signal (repr) 13 horizontal line of 13 x 13 grid.
 
-Each bit in one row_det signal maps to 32 x 32 pixels in the original image. So, when this bit is high, it means that the corresponding 32 x 32 pixels in the original image is containing a car from the perspective of the accelerator
+Each bit in one row_det signal maps to 32 x 32 pixels in the original image. So, when this bit is high, it means that the corresponding 32 x 32 pixels in the original image is containing a car from the perspective of the accelerator.
 
-each bit (repr) 32 x 32 pixels 
+each bit (repr) 32 x 32 pixels.
 
-For handling communication with recepient blocks from the System, the detect_valid is asserted after finishing the calculation of each bit from the row_det signals
+For handling communication with recepient blocks from the System, the detect_valid is asserted after finishing the calculation of each bit from the row_det signals.
 
-each grid predicition (ass) high detect_valid 
+each grid predicition (ass) high detect_valid. 
 
-This aims for guiding the receiving block from the system to catch only the valid prediction
+This aims for guiding the receiving block from the system to catch only the valid prediction.
 
-The detect_valid is for each single grid for protection purposes so that once the system detects a car it gives that grid result without waiting for the whole image
+The detect_valid is for each single grid for protection purposes so that once the system detects a car it gives that grid result without waiting for the whole image.
 
-This approach (enables) more safety
-      "       (enables) faster response
+This approach (enables) more safety.
+      "       (enables) faster response.
 
 :: More Details about the System ::
 
-In this section, we are going to go deeper into the system details
+In this section, we are going to go deeper into the system details.
 
-The accelerator is for the neural network while the post-processing block is for processing the raw output of the neural network for getting the final inference results
+The accelerator is for the neural network while the post-processing block is for processing the raw output of the neural network for getting the final inference results.
 
-The used YOLO model is LPYOLO. It replaces the sigmoid in the YOLOv3 with a hard tanh for hardware comaptibility. LPYOLO was proposed in 2022 by Sefa Burak
+The used YOLO model is LPYOLO. It replaces the sigmoid in the YOLOv3 with a hard tanh for hardware comaptibility. LPYOLO was proposed in 2022 by Sefa Burak.
 
 The main purpose for LPYOLO was face detection. Thus, Our-team retrained the model for cars detection.
 
-The used YOLO model (called) LPYOLO
+The used YOLO model (called) LPYOLO.
 
-neural network (abbrev) NN
-  "    (use-for) object-detection
-  "    (called) Low-Precesion You-Only-Look-Once in System
+neural network (abbrev) NN.
+  "    (use-for) object-detection.
+  "    (called) Low-Precesion You-Only-Look-Once in System.
 
-LPYOLO (abbrev) Low-Percision You-Only-Look-Once
-  "    (variant) YOLO 
-  "    (repl) sigmoid with hard tanh for hardware compatibility
-  "    (impl-by) Sefa Burak in 2022
+LPYOLO (abbrev) Low-Percision You-Only-Look-Once.
+  "    (variant) YOLO.
+  "    (repl) sigmoid with hard tanh for hardware compatibility.
+  "    (impl-by) Sefa Burak in 2022.
 
-It was built mainly for face detection
+It was built mainly for face detection.
 
-Our-team (train) LPYOLO to serve the cars detection purpose
+Our-team (train) LPYOLO to serve the cars detection purpose.
 
-used dataset is cars detection dataset (pub-by) some user on Kaggle
+used dataset is cars detection dataset (pub-by) some user on Kaggle.
 
-Sigmoid replacement (enables) being more friendly to hardware deployment
+Sigmoid replacement (enables) being more friendly to hardware deployment.
 
-accelerator (means) Neural network after hardware transformation
-    "       (called) streamingdataflowpartition
-    "        (bfr)  post-processing block
-    "       (suppl) post-processing block with raw detection bytes of the NN core computations
-    "       (genby) FINN Framework
+accelerator (means) Neural network after hardware transformation.
+    "       (called) streamingdataflowpartition.
+    "        (bfr)  post-processing block.
+    "       (suppl) post-processing block with raw detection bytes of the NN core computations.
+    "       (genby) FINN Framework.
 
-FINN Framework (gen) Hardware IP for NN
-    "          (crtd) Xilinx Reasearch Lab
+FINN Framework (gen) Hardware IP for NN.
+    "          (crtd) Xilinx Reasearch Lab.
 
-FINN Framework is completely open-source
+FINN Framework is completely open-source.
 
-FINN flow (consists) 6 stages
-    "     (resource) medium.com/@m7md5303/finn-framework-nn-to-ip-dc88df882a5b
+FINN flow (consists) 6 stages.
+    "     (resource) medium.com/@m7md5303/finn-framework-nn-to-ip-dc88df882a5b.
 
-post-processing module (called) yolo_post
+post-processing module (called) yolo_post.
 
-yolo_post (implorg) Verilog
+yolo_post (implorg) Verilog.
 
-Verilog (enables) good resource control
-  "     (support) higher throughput 
+Verilog (enables) good resource control.
+  "     (support) higher throughput.
 
-raw detection bytes (bwd) accelerator
+raw detection bytes (bwd) accelerator.
 
-yolo_post (do) processing on raw detection bytes 
+yolo_post (do) processing on raw detection bytes. 
 
-third of raw detection bytes (repr) probability of class and objectness scores
+third of raw detection bytes (repr) probability of class and objectness scores.
 
-NN output (contain) three anchor boxes
+NN output (contain) three anchor boxes.
 
-Each anchor box (gen) 6 bytes
+Each anchor box (gen) 6 bytes.
 
-The last two bytes of these 6 bytes (repr) probability of class and objectness scores
+The last two bytes of these 6 bytes (repr) probability of class and objectness scores.
 
-class and objectness score (repr-by) two bytes for each anchor box
-          "                (det)  the presence of cars when multiplied together
+class and objectness score (repr-by) two bytes for each anchor box.
+          "                (det)  the presence of cars when multiplied together.
 
-These scores represents probability so to get the final result, they are multiplied together
+These scores represents probability so to get the final result, they are multiplied together.
 
-The multiplication (imply) no floating point operations
+The multiplication (imply) no floating point operations.
 
-System (consider) three anchor boxes for safety purposes
+System (consider) three anchor boxes for safety purposes.
 
-If only one anchor box sensed a car whole system says there is a car
+If only one anchor box sensed a car whole system says there is a car.
 
 :: Implementation ::
 
-This section is to discuss detailed steps of implementation of the system
+This section is to discuss detailed steps of implementation of the system.
 
-Jupyter Notebooks (use-for) most of the implementation flow
+Jupyter Notebooks (use-for) most of the implementation flow.
 
-Colab Cloud (use-for) training and exporting
-    "       (prov-by) Google 
+Colab Cloud (use-for) training and exporting.
+    "       (prov-by) Google.
 
-After training the NN, trained model (derive) QONNX file
+After training the NN, trained model (derive) QONNX file.
 
-QONNX file (repr) quantized NN
-  "        (delivaddr) FINN for the transformations
+QONNX file (repr) quantized NN.
+  "        (delivaddr) FINN for the transformations.
 
-transformations (involves) elimination floating point operations and NN layers to Hardware Conversions
+transformations (involves) elimination floating point operations and NN layers to Hardware Conversions.
       
-FINN Framework (enables) transformations checking 
+FINN Framework (enables) transformations checking. 
 
-transformations checking (sh-precede) IP generation
+transformations checking (sh-precede) IP generation.
 
-Parallelism degree of the accelerator  (det-by) configurations (dec-by) designer
+Parallelism degree of the accelerator  (det-by) configurations (dec-by) designer.
 
-accelerator clock frequency (det-by) designer
+accelerator clock frequency (det-by) designer.
 
-For our system, we set the frequency to be 150 MHz
+For our system, we set the frequency to be 150 MHz.
 
-This should be sufficient for real time calculations
+This should be sufficient for real time calculations.
 
-FINN flow (imply) running Jupyter Notebooks on local host
+FINN flow (imply) running Jupyter Notebooks on local host.
 
-post-processing (handle-by) yolo_post
+post-processing (handle-by) yolo_post.
 
-yolo_post (involves) no floating point operations 
-    "      (uses) Verilog functions for tidying the code
+yolo_post (involves) no floating point operations. 
+    "      (uses) Verilog functions for tidying the code.
 
 :: Inference Results ::
 
-Here, we will talk about the final results
+Here, we will talk about the final results.
 
-For visulaizing the hardware results, PYNQ Jupyter Notebook was used
+For visulaizing the hardware results, PYNQ Jupyter Notebook was used.
 
-This implies implementing the accelerator on the PYNQ-Z2 besides the main board which is ZCU102
+This implies implementing the accelerator on the PYNQ-Z2 besides the main board which is ZCU102.
 
-Testing on PYNQ-Z2 (uses) Xilinx AXI DMA for sending test images
+Testing on PYNQ-Z2 (uses) Xilinx AXI DMA for sending test images.
 
-Design on PYNQ-Z2 (imply) lower clock frequency because the lack in resources
+Design on PYNQ-Z2 (imply) lower clock frequency because the lack in resources.
 
-Clock frequency on PYNQ-z2 (hasX) 100 MHz
+Clock frequency on PYNQ-z2 (hasX) 100 MHz.
 
-System (gen) high-valued bits for grids (contain) cars
-  "    (fwd) reliable inference results
-  "     (pub-by) Our team in IEEE ICECS25 Proceedings
-  "    (succ1) real-rime processings
+System (gen) high-valued bits for grids (contain) cars.
+  "    (fwd) reliable inference results.
+  "     (pub-by) Our team in IEEE ICECS25 Proceedings.
+  "    (succ1) real-rime processings.
 
-Inference-rate (hasX) 67 FPS on ZCU102
-      "        (hasX) 18 FPS on PYNQ-Z2
+Inference-rate (hasX) 67 FPS on ZCU102.
+      "        (hasX) 18 FPS on PYNQ-Z2.
 
-System proved its capability in standing out in autonomous vehicles applications
+System proved its capability in standing out in autonomous vehicles applications.
 
