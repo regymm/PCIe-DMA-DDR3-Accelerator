@@ -37,7 +37,7 @@ Its goal is to build a technology that transforms our knowledge into an organize
 
 ### What are Knowledge Graphs?
 
-Most engineers are familiar with CSV and xlsx sheets where data are stored in a tabular form. Maybe columns represent the type of utilized resources in an FPGA project (e.g. LUTs, BRAMs) or even latency and power. Whether you have noticed or not, these tables represent a form of database. Other forms of storing data include binary databases and JSON-formatted databases. *You don't have to be familiar with all of that.*
+Most engineers are familiar with CSV and xlsx sheets where data is stored in a tabular form. Maybe columns represent the type of utilized resources in an FPGA project (e.g. LUTs, BRAMs) or even latency and power. Whether you have noticed or not, these tables represent a form of database. Other forms of storing data include binary databases and JSON-formatted databases. *You don't have to be familiar with all of that.*
 
 The question now is, what are Knowledge Graphs?
 
@@ -107,9 +107,9 @@ However, these were only abstract and theoretical concepts that we can't properl
 
 ### SSTorytime Project
 
-As mentioned earlier, N4L itself is not a separate project but it was created by the authors of `SSTorytime project`. Thus, to make the most of the method, you are encouraged to firstly install the original project. As was noted before, it is assumed you are using the **Jan 2026** version of this project.
+As mentioned earlier, N4L itself is not a separate project but it was created by the authors of `SSTorytime project`. Thus, to make the most of the method, you are encouraged to first install the original project. As was noted before, it is assumed you are using the **Jan 2026** version of this project.
 
-The good news is that the SSTorytime project is open-source and the source code are accessible on GitHub.
+The good news is that the SSTorytime project is open-source and the source code is accessible on GitHub.
 
 ### Installing the project
 
@@ -172,7 +172,7 @@ And of course, you are free to add more than one section to your document.
 
 ### Back to N4L Arrows
 
-We have left behind a few but important points regarding N4L arrows and in this subsection it is the time to discuss them. Again, arrows in knowledge graphs are the relations between the nodes. So, how do you include them properly in your N4L file?
+We have left behind a few but important points regarding N4L arrows and in this subsection, it is the time to discuss them. Again, arrows in knowledge graphs are the relations between the nodes. So, how do you include them properly in your N4L file?
 
 Generation of the knowledge graph from the N4L notes is through a compiler provided with the `SSTorytime Project`. The process of adding the proper arrows to the notes is pretty simple as usual with the whole method.
 
@@ -200,7 +200,7 @@ All N4L arrows are used in the same way: you just add them in your note line and
 
 You should have noticed that this snippet is different from the first one through having two columns of arrows. You should also notice that the left column starts with `+` and the second one starts with `-`. The reason is that some relations have two directions: Forward and Backward
 
-In other words, Gabriel **removes** the error from the code or I can say the error **is removed by** Gabriel. That means that the relation `remove` can have two directions forward and backward. This is why you can find relations can be represented by two arrows in the LT file. Because these relations have the possibility to go forward or backward. This should direct you when adding your own arrows in this file to include the forward direction of such a relation and its backward pair.
+In other words, Gabriel **removes** the error from the code or I can say the error **is removed by** Gabriel. That means that the relation `remove` can have two directions forward and backward. This is why you can find relations represented by two arrows in the LT file. Because these relations have the possibility to go forward or backward. This should direct you when adding your own arrows in this file to include the forward direction of such a relation and its backward pair.
 
 Additional point is that adding these type of arrows (2-direction arrows) would differ in nothing from adding arrows from the NR files. Hence, we can say normally:
 ```N4L
@@ -263,7 +263,7 @@ Setting the title for your project is the first step you have to do in your note
 ```N4L
 - Project title
 ```
-In the following discussed examples, you may find some technical words that you may not be familiar with all of them but you just have to understand how to map the methodology to your project. For our example, we will write:
+In the examples discussed below, you may find some technical words that you may not be familiar with all of them. You just have to understand how to map the methodology to your project. For our example, we will write:
 ```N4L
 - Pure Hardware YOLO Inference
 ```
@@ -271,7 +271,7 @@ Now, we have set the chapter title for the further notes we are going to write i
 
 ### Creating Sections
 
-A chapter inside N4L file consists of sections. Each section covers a certain point the user want to document. e.g. Some software function or a certain hardware IP. So, each section is acting like a room in an apartment. Sections also require creating titles as discussed. This can be like
+A chapter inside an N4L file consists of sections. Each section covers a certain point the user wants to document. e.g. a software function or a certain hardware IP. So, each section is acting like a room in an apartment. Sections also require creating titles as discussed. This can be like
 ```N4L
 :: Target Hardware ::
 //
@@ -288,7 +288,7 @@ Yes, it is allowed to write normal text in an N4L file. You aren't restricted to
 
 ### Creating Relations
 
-This is the most important procedure for getting your documentation clean. This step is what can cause your documentation to be either good or bad. As in this step, you are drawing the graph and connecting the nodes.
+This is the most important procedure for getting your documentation clean. This step is what can cause your documentation to be either good or bad. In this step, you are drawing the graph and connecting the nodes.
 
 #### Understanding the Project
 Although it can appear as a naive step, this is the most important step in drawing the graph. If you can't understand the project, you will not be able to write a good documentation for it or create a well-organized knowledge graph expressing it. So, at this step, you have to understand your project, know its components and their roles, the tests that were performed and how their results were judged, the participating team and what tools were used. This step should provide you with essential data in your mind to write it down in a proper way in N4L format for creating the best possible knowledge graph out of your project.
@@ -301,7 +301,7 @@ What you have in your hands so far:
 - Strong understanding of your project
 - The objects/events constructing this project
 
-The duty now is to connect these nodes. Hence, from your understanding of the project, you should be aware of how these nodes are related. For instance, if you have a PCB that is connected to a 5V power source. Then, we have one node which is PCB and another one which is the 5V. And they are connected with relation describing having a source
+The task now is to connect these nodes. Hence, from your understanding of the project, you should be aware of how these nodes are related. For instance, if you have a PCB that is connected to a 5V power source. Then, we have one node which is PCB and another one which is the 5V. And they are connected with relation describing having a source
 ```N4L
 PCB (hassource) 5V
 ```
@@ -329,9 +329,9 @@ Don't worry, from <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/b
 
 ## 5. Visualizing the graph
 
-so far, we haven't yet seen how to visualize the graph or even seen the result of converting a project to a knowledge graph that we were talking about at the beginning of this document. In this section, we are going to discuss how you can make use of your notes and visualize the graph you have created with your N4L notes based on the N4L4Doc Methodology
+So far, we haven't yet seen how to visualize the graph or even seen the result of converting a project to a knowledge graph that we were talking about at the beginning of this document. In this section, we are going to discuss how you can make use of your notes and visualize the graph you have created with your N4L notes based on the N4L4Doc Methodology
 
-As we have mentioned before, the following relative paths is assuming you are using the `Jan 2026` version of the SSTorytime project.
+As we have mentioned before, the following relative paths are assuming you are using the `Jan 2026` version of the SSTorytime project.
 
 ### Getting things ready
 We have to get the database ready for receiving our notes hence, in the root directory we shall open a new shell terminal. For an Ubuntu machine you would type
@@ -341,7 +341,7 @@ make ramdb
 For other OS, check the main repository of the SSTorytime documentation
 
 ### Compiling the notes
-As you have known, for converting the N4L notes into a knowledge graph, the notes themselves have to pass a compiler to be ready to be uploaded to the database. The compiler binary lies in the `./src/` directory. Thus, for compiling your notes, you would run
+As you have known, for converting the N4L notes into a knowledge graph, the notes themselves have to pass through a compiler to be ready to be uploaded to the database. The compiler binary lies in the `./src/` directory. Thus, for compiling your notes, you would run
 ```shell
 ./../src/N4L -v your_filename.n4l
 ```
@@ -371,7 +371,7 @@ you will find a local host URL displayed in your terminal. When you open it, you
 
 ### Visualizing the notes
 
-After you open the local host, you will find an empty grid-like rectangle. This is where the graph should appear (but it is still empty now). Additionally, you would find a search bar at the bottom of the screen. This is the controller of what appears on this page. Let's run a simple example using the file we shared earlier the `eayolo.n4l`
+After you open the local host, you will find an empty grid-like rectangle. This is where the graph should appear (but it is still empty now). Additionally, you would find a search bar at the bottom of the screen. This controls what appears on this page. Let's run a simple example using the file we shared earlier the `eayolo.n4l`
 
 The project in that example utilized a framework called `FINN` If we want to know the relations between this framework and other objects in the project so we simply type in the search bar
 `path from FINN` and you would directly get
@@ -379,7 +379,7 @@ The project in that example utilized a framework called `FINN` If we want to kno
 ![Knowledge Gr](./imgs/finn.png)
 ![Knowledge g](./imgs/finn_list.png)
 
-Isn't that impressive? Relations (arrows) originating from FINN is visualized in the grid screen allowing you to trace them as connected nodes. Additionally, in the bottom, you can find a beautiful colorful text demonstrating the relations originating from the FINN Framework node. This is what we can confidently call `Semantic Search` Where your search is no more about just finding where the object under concern lies but also what its role is and how it is connected with other objects.
+Isn't that impressive? Relations (arrows) originating from FINN are visualized in the grid screen allowing you to trace them as connected nodes. Additionally, in the bottom, you can find a beautiful colorful text demonstrating the relations originating from the FINN Framework node. This is what we can confidently call `Semantic Search` Where your search is no more about just finding where the object under concern lies but also what its role is and how it is connected with other objects.
 
 Additionally, you can retrieve your notes in English text. In other words, you can see how your notes look like after replacing the N4L arrows with their English meaning. How can that be? Again, from the search bar, you simply write `\notes \chapter {your chapter name} \context {your section name} (optional)` and you can find your notes displayed in an impressive way like the following snippet
 
