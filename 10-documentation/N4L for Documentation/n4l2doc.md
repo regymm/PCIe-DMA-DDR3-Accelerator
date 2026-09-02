@@ -128,7 +128,7 @@ Well, if you followed the past guide, you wouldn't struggle at all. You may pref
 
 ![Example of Conversion](./imgs/tmp.png)
 
-This snippet provides an example for the simple way of conversion discussed in the previous section. The full N4L file is found <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/eayolo.n4l">here</a> and its conversion is <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/N4L%20for%20Documentation/tmp.md">here</a>
+This snippet provides an example for the simple way of conversion discussed in the previous section. The full N4L file is found <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/eayolo.n4l">here</a> and its conversion is <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/N4L%20for%20Documentation/conversion_example.md">here</a>
 
 ## 4.Enhancing the output
 
