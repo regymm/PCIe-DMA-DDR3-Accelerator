@@ -98,7 +98,7 @@
 
 <p>Now, after you have gone through the full process, you would be excited to see how your documentation looks like. <strong style="background: #eef2f7; padding: 2px 8px; border-radius: 8px;">The output should appear in <code>SSTorytime/generated_md/</code> with file name: your_chapter_name.md</strong> . 
 
-<p>Moreover, additional feature is provided to users who don't love AI. In the same path: <code>SSTorytime/generated_md/</code>, you can find a file called <code>your_chapter_name_direct_Interpretation.md</code> This file contains all your N4L notes in human readable text i.e. with direct replacement N4L arrows with their meaning. This should allow you to inspect your notes how they look like in human-readable text and also to evaluate the generated markdown from the LLM</p>
+<p>Moreover, additional feature is provided to users who don't prefer to rely on AI. In the same path: <code>SSTorytime/generated_md/</code>, you can find a file called <code>your_chapter_name_direct_Interpretation.md</code> This file contains all your N4L notes in human readable text i.e. with direct replacement N4L arrows with their meaning. This should allow you to inspect your notes how they look like in human-readable text and also to evaluate the generated markdown from the LLM</p>
 
 **The AI-generated file has a disclaimer to inform users that this very document hasn't been revised by the project author yet. An issue that might be common with the AI output is that the LLM can replace the provided link in the original notes with either a different or a broken one. Thus, it is recommended to check carefully the AI output. This issue CAN'T happen with the direct-interpretation file as it is statically generated. After finishing your revision, you can safely remove the disclaimer from the markdown file.**
 
@@ -134,7 +134,7 @@
 
 <h4 style="color: #235b7a;">7.2. Running the tool</h4>
 
-<p>Once the installation is complete, you can now use the tool for generating your documentations automatically through:</p>
+<p>Once the installation is complete, you can now use the tool for generating your documentation automatically through:</p>
 
 <pre style="background: #1e2a32; color: #eef4fc; padding: 16px; border-radius: 16px;">
 <code style="background: transparent; color: #eef4fc;">python3 md_generator.py &lt;your_chapter_name&gt;</code>
@@ -146,7 +146,7 @@
 
 <p><strong>Example 2 Output</strong>: <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/SV2_Analyzer.md" style="color: #2c7da0;">Here</a> It is generated from this <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/sv2_analyzer.n4l" style="color: #2c7da0;">notes file</a>  and this is the direct-interpretation <a href="https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/blob/main/10-documentation/AIN4L%20Documentation/SV2_Analyzer_direct_Interpretation.md" style="color: #2c7da0;">output</a>  </p>
 
-The example Markdown outputs files were not modified by any human intervention except through:
+The example Markdown output files were not modified by any human intervention except through:
 - Repairing any broken/missing link(s)
 - Adding snippets with their captions from the knowledge browser for demonstrating the usage of visualized knowledge graphs for projects documentation
 
