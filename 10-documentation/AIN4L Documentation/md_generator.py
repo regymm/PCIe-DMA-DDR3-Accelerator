@@ -98,7 +98,7 @@ if file_opened:
     chunk_size = 120#chunk size (if file is long)
     ret_chunks = 0
     ret_lines_tmp = []
-    tmp_md_file = open("./../generated_md/direct_interpretation_doc.md" , "r")
+    tmp_md_file = open(f'./../generated_md/{md_filename_direct_Interpretation}' , "r")
     new_md_file = open(md_filename , "w")
     new_md_file.write("**Disclaimer: The Documentation is AI-generated and may make mistakes**" + "\n" + "\n")
     for line in tmp_md_file: #looping on the static generated md lines
