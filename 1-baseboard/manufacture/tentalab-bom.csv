@@ -1,0 +1,94 @@
+Designator,Qty,Comment,DNP,Exclude from BOM,Exclude from Board,Footprint,Datasheet,LCSC
+BT1,1,Battery_MS621FE-FL11E,DNP,,,cm5-module-Library:Battery_MS621FE-FL11E,https://www.sii.co.jp/en/me/datasheets/ms-rechargeable/ms621fe/,
+"C1,C2,C3,C4,C9",5,C-4u7-0402,,,,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A475MP5NRNC_C23733.pdf,C23733
+"C5,C6",2,C-10u-0603,,,,Capacitor_SMD:C_0603_1608Metric,https://www.lcsc.com/datasheet/C96446.pdf,C96446
+"C7,C8,C10,C12,C13,C14,C15,C16,C17,C23,C26,C27,C30,C31,C34,C35,C36,C37,C38,C41,C42,C43,C46,C47,C48,C49,C50,C51,C52,C53,C56,C72,C75,C105,C106,C167,C196,C199,C200,C202,C205,C209,C210,C211,C213,C217,C218,C219,C221,C225,C226,C227",52,100n,,,,Capacitor_SMD:C_0402_1005Metric,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf,
+C11,1,47pF/50V,,,,Capacitor_SMD:C_0402_1005Metric,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf,
+C18,1,4.7u,,,,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf,
+C19,1,120pF/50V,,,,Capacitor_SMD:C_0402_1005Metric,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf,
+C20,1,10u,,,,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf,
+"C21,C22,C24,C25,C28,C29,C32,C33,C44,C45,C197,C198,C201,C203,C204,C206,C207,C208,C212,C214,C215,C216,C220,C222,C223,C224",26,22u,,,,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf,
+"C39,C40",2,C-4u7-0402,,,,Capacitor_SMD:C_0402_1005Metric,https://lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A475MP5NRNC_C23733.pdf,C23733
+"C54,C66,C73,C77",4,100u 16V,,,,Capacitor_SMD:CP_Elec_6.3x5.4,,
+"C55,C71,C74,C78",4,10n,,,,Capacitor_SMD:C_0402_1005Metric,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf,
+C67,1,10uF,,,,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,
+C68,1,100nF,,,,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,
+C69,1,100nF,,,,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,,
+C70,1,10uF,,,,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,
+C76,1,C-100n-0402,,,,Capacitor_SMD:C_0402_1005Metric,https://lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.pdf,C307331
+"C79,C80",2,100nF,,,,Capacitor_SMD:C_0402_1005Metric,,
+"D1,D2,D15,D16,D17,D18,D19,D38",8,LED-R-0603_KT-0603R,,,,cm5-module-Library:LED_0603_1608Metric_R,https://lcsc.com/datasheet/lcsc_datasheet_2507101606_Hubei-KENTO-Elec-KT-0603R_C2286.pdf,C2286
+"D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D22,D23",12,PUSB3F96X,,,,cm5-module-Library:SOT1176-1,https://mouser.com/datasheet/2/916/PUSB3F96-1600324.pdf,C478121
+"H1,H2,H3,H4",4,Spacer_M2.5_H3mm_9774030151R,,,,cm5-module-Library:Spacer_M2.5_H3mm_9774030151R,https://www.we-online.com/components/products/datasheet/9774030151R.pdf,
+J1,1,USB-A_USB-303WSD-BRY,,,,cm5-module-Library:USB-A_Receptacle_USB-303WSD-BRY,https://lcsc.com/datasheet/lcsc_datasheet_2411220306_XUNPU-USB-303WSD-BRY_C2895028.pdf,C2895028
+J2,1,JTAG_UPSTREAM,,,,Connector_PinHeader_2.00mm:PinHeader_2x07_P2.00mm_Vertical,,
+J3,1,CM5_1-100_3mm-stack,,,,cm5-module-Library:Conn_Socket_Hirose_DF40_2x50_DF40HC-3.0-100DS-0.4V,https://lcsc.com/datasheet/lcsc_datasheet_2410121810_HRS-DF40HC-3-0-100DS-0-4V-51_C424649.pdf,C424649
+J4,1,CM5_101-200_3mm-stack,,,,cm5-module-Library:Conn_Socket_Hirose_DF40_2x50_DF40HC-3.0-100DS-0.4V,https://lcsc.com/datasheet/lcsc_datasheet_2410121810_HRS-DF40HC-3-0-100DS-0-4V-51_C424649.pdf,C424649
+"J5,J7",2,HDMI_A,,,,Connector_Video:HDMI_A_Molex_208658-1001_Horizontal,https://en.wikipedia.org/wiki/HDMI,
+J6,1,Conn_Coaxial_Small,DNP,,,Connector_Coaxial:SMA_Amphenol_901-144_Vertical,,
+J8,1,Conn_01x04,,,,CM5IOLibrary:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical,,
+J9,1,RPi USB2,,,,Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,
+J10,1,Micro_SD_Card,,,,memblaze2qmtech:SDMICRO_AT,https://www.we-online.com/components/products/datasheet/693072010801.pdf,
+J11,1,RPI_HEADER,,,,Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical,https://www.toby.co.uk/uploads/publications/1673.pdf,
+J12,1,RPI_OPTIONS,,,,Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical,,
+J13,1,RJ45_HC612601A-M893-A,,,,cm5-module-Library:RJ45_HC612601A-M893-A,https://lcsc.com/datasheet/lcsc_datasheet_2504101957_HCTL-HC612601A-M893-A_C3021368.pdf,C3021368
+"J14,J15,J22,J37",4,PCIe,,,,memblaze2qmtech:PCIe x8 connector SMT AMPHENOL_10061913-102CLF,http://www.ritrontek.com/uploadfile/2016/1026/20161026105231124.pdf#page=63,
+J16,1,12V ATX,,,,Connector_Molex:Molex_Mini-Fit_Jr_5566-06A_2x03_P4.20mm_Vertical,,
+"J17,J18,J19,J24",4,JTAG_0,,,,Connector_PinHeader_2.00mm:PinHeader_2x07_P2.00mm_Vertical,,
+J20,1,Jack-DC,,,,Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002,,
+J21,1,FPGA_RST_nPRSNT,,,,Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical,,
+J23,1,RPi UART,,,,Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,
+"J25,J26,J27,J28",4,JTAG_SKIP_0,,,,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,,
+"J29,J30",2,Conn_01x22_Female,,,,CM5IOLibrary:Hirose_FH12-22S-0.5SH_1x22-1MP_P0.50mm_Horizontal,https://www.hirose.com/product/document?clcode=&productname=&series=FH12&documenttype=Catalog&lang=en&documentid=D31648_en,
+J43,1,ATX-24,,,,Connector_Molex:Molex_Mini-Fit_Jr_5566-24A_2x12_P4.20mm_Vertical,https://www.intel.com/content/dam/www/public/us/en/documents/guides/power-supply-design-guide-june.pdf#page=33,
+"J44,J46",2,ATX5V,,,,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,,
+"J45,J47",2,ATX5VSB,,,,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,,
+J48,1,PWR_JMPER,,,,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,,
+J49,1,ATXPWR_JMPER,,,,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,,
+J50,1,RPI_UART,,,,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,,
+J51,1,JTAG_UPSTREAM_2x5,,,,Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical,,
+L1,1,470nH,,,,Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,
+"L2,L3,L4",3,120R@100MHz,,,,Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,
+L5,1,4.7uH,,,,Inductor_SMD:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder,,
+"L25,L26,L27,L28,L29,L30,L31,L32,L33,L34,L35,L36",12,1uH,,,,Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,
+"R1,R2,R12,R13,R14,R83,R84,R110",8,R-1k-0402,,,,cm5-module-Library:R_0402_1005Metric,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf,C11702
+R3,1,5.1k,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf,C25744
+"R4,R5,R10",3,R-0R-0402,DNP,,,cm5-module-Library:R_0402_1005Metric,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0402WGF0000TCE_C17168.pdf,C17168
+"R6,R8,R29,R31",4,5.1K,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,"https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0402WGF0000TCE_C17168.pdf,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf","C17168,C25744"
+"R7,R44,R46,R48,R50,R52,R54",7,R-0R-0402,DNP,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0402WGF0000TCE_C17168.pdf,C17168
+"R9,R171",2,2.2K 1%,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf,
+R11,1,R-0R-0402,,,,cm5-module-Library:R_0402_1005Metric,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0402WGF0000TCE_C17168.pdf,C17168
+"R15,R30,R85,R91,R95,R96,R127,R128",8,R-10k-0402,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,"https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0402WGF2201TCE_C25879.pdf,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf","C25744,C25879"
+"R16,R19",2,1.43K,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0402WGF0000TCE_C17168.pdf,C17168
+"R17,R36,R86,R87,R88,R97,R98,R130",8,R-0R-0402,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0402WGF0000TCE_C17168.pdf,C17168
+R18,1,R-2k2-0402,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0402WGF2201TCE_C25879.pdf,C25879
+R20,1,475,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0402WGF0000TCE_C17168.pdf,C17168
+"R21,R22,R23,R24,R25,R26,R27,R28,R33,R34,R35,R38,R39,R40,R41,R42",16,330,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0402WGF0000TCE_C17168.pdf,C17168
+R32,1,1K,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0402WGF0000TCE_C17168.pdf,C17168
+R37,1,R-10k-0402,,,,cm5-module-Library:R_0402_1005Metric,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf,C25744
+R43,1,475R,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0402WGF0000TCE_C17168.pdf,C17168
+"R45,R47,R49,R51,R53,R55",6,10k,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0402WGF0000TCE_C17168.pdf,C17168
+"R56,R57,R58,R59,R60,R61,R62,R63,R64,R65,R66,R67",12,33,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0402WGF0000TCE_C17168.pdf,C17168
+"R68,R69,R70,R71,R72,R73,R74,R75,R76,R77,R78,R79",12,49.9,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-0402WGF0000TCE_C17168.pdf,C17168
+R80,1,180k,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf,C25744
+R81,1,120k,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf,C25744
+R82,1,0,,,,CM5IOLibrary:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf,C25744
+R89,1,0R PWR,DNP,,,Resistor_SMD:R_1206_3216Metric,https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf,
+R90,1,0R PWR,,,,Resistor_SMD:R_1206_3216Metric,https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf,
+R92,1,10K,,,,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder,,
+R93,1,54.9K,,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,
+"R94,R129",2,10K,,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,
+"R104,R109",2,5.1K,,,,Resistor_SMD:R_0402_1005Metric,,
+"R134,R135",2,33,,,,Resistor_SMD:R_0402_1005Metric,,
+"R329,R330,R333,R336,R341,R342,R343,R344,R349,R350,R351,R352,R357,R358,R359,R360",16,4.7K,,,,Resistor_SMD:R_0402_1005Metric,,
+"R331,R332,R334,R335,R337,R338,R339,R340,R345,R346,R347,R348,R353,R354,R355,R356",16,4.7K,DNP,,,Resistor_SMD:R_0402_1005Metric,,
+SW1,1,PWR_BTN,,,,Button_Switch_SMD:SW_SPST_CK_RS282G05A3,,
+U1,1,AP22615AWU-7,,,,cm5-module-Library:TSOT-23-6,https://www.diodes.com/datasheet/download/AP22815_615.pdf,C2680357
+U2,1,PI7C9X2G608ELBZXAE,,,,memblaze2qmtech:XCVR_PI7C9X2G608ELBZXAE,,
+U3,1,TPS62821DLC,,,,Package_SON:Texas_VSON-HR-8_1.5x2mm_P0.5mm,http://www.ti.com/lit/ds/symlink/tps62823.pdf,
+U4,1,M93C86,,,,Package_SO:SOIC-8_5.3x6.2mm_P1.27mm,http://ww1.microchip.com/downloads/en/DeviceDoc/20001749K.pdf,
+U5,1,CH330N,,,,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,http://www.wch.cn/downloads/file/240.html,
+U6,1,TPS563200,,,,Package_TO_SOT_SMD:SOT-23-6,http://www.ti.com/lit/ds/symlink/tps563200.pdf,
+U7,1,AP22615AWU-7,,,,Package_TO_SOT_SMD:TSOT-23-6,https://www.diodes.com/datasheet/download/AP22815_615.pdf,C2680357
+U12,1,RT9742SNGV,,,,Package_TO_SOT_SMD:TSOT-23_HandSoldering,https://www.richtek.com/assets/product_file/RT9742/DS9742-10.pdf,
+"U14,U17,U18,U19",4,QSFP_Conn,,,,memblaze2qmtech:QSFP_Conn_w_Cage,,
