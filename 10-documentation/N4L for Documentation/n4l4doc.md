@@ -200,7 +200,7 @@ All N4L arrows are used in the same way: you just add them in your note line and
 
 You should have noticed that this snippet is different from the first one through having two columns of arrows. You should also notice that the left column starts with `+` and the second one starts with `-`. The reason is that some relations have two directions: Forward and Backward
 
-In other words, Gabriel **removes** the error from the code or I can say the error **is removed by** Gabriel. That means that the relation `remove` can have two directions forward and backward. This is why you can find relations represented by two arrows in the LT file. Because these relations have the possibility to go forward or backward. This should direct you when adding your own arrows in this file to include the forward direction of such a relation and its backward pair.
+In other words, Gabriel **removes** the error from the code or I can say the error **is removed by** Gabriel. That means that the relation `remove` can have two directions forward and backward. This is why you can find relations represented by two arrows in the LT file. Because these relations have the possibility to go forward or backward. This should guide you when adding your own arrows in this file to include the forward direction of such a relation and its backward pair.
 
 Additional point is that adding these type of arrows (2-direction arrows) would differ in nothing from adding arrows from the NR files. Hence, we can say normally:
 ```N4L
