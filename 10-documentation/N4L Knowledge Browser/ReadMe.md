@@ -19,7 +19,7 @@ currently fed with:
 
 - <a href='https://ieeexplore.ieee.org/document/11270746/'>https://ieeexplore.ieee.org/document/11270746/</a>
 
-- <a href='https://ieeexplore.ieee.org/document/11602718/'>https://ieeexplore.ieee.org/document/11602718/</a> 
+- <a href='https://ieeexplore.ieee.org/document/11602718/'>https://ieeexplore.ieee.org/document/11602718/</a>
 
 The embedding can feel a little bit slower than working locally
 
@@ -34,7 +34,7 @@ As mentioned earlier, the compiler is built with Python and responsible for the 
 
 For running the compiler, one shall run:
 ```bash
-python3 n4l_bcompiler.py {directory to arrows files} {directory to the N4L source file}
+python3 ./n4lkviz/public/n4l_bcompiler.py {directory to arrows files} {directory to the N4L source file}
 ```
 The way of running the compiler script may differ in OS other than the Ubuntu 22.04 way mentioned here.
 
