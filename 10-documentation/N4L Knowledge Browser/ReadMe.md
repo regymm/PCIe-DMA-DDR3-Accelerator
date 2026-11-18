@@ -30,7 +30,9 @@ KViz Knowledge Browser is an open-source knowledge browser dedicated for visuali
 The following figure demonstrates the project architecture. The user is only requested to provide the source N4L file and the 4 arrows files already discussed in the N4L4Doc article. This group of files are fed into the python compiler where its responsibility is to generate two files: JSON and Markdown files for each given N4L file. The compiler output represents the React JS-based browser database. As the figure shows, the application is composed mainly of 3 main views: Graph View, Notes View and Markdown View.
 <img width="808" height="499" alt="image" src="https://github.com/user-attachments/assets/68df41ff-da91-4f72-af59-70940ed2a1b5" />
 ## Compiler Role
-As mentioned earlier, the compiler is built with Python and responsible for the construction of the browser database. It generates 2 files per each N4L file depending on the fed arrows files: (NR, LT, CN and EP).
+As mentioned earlier, the compiler is built with Python and responsible for the construction of the browser database. It generates 2 files per each N4L file depending on the fed arrows files: (NR, LT, CN and EP). Additionally, it updates the files list stored in the local database. You can find the DB files feeding the browser under their corresponding directories: `./n4lkviz/public/json`, `./n4lkviz/public/dir_notes` and `./n4lkviz/public/json_list`.
+
+Under `./n4lkviz/public/` you can find `arrows_dir` directory. It is a useful start point for you that has a group of useful arrows to start documenting with.
 
 For running the compiler, one shall run:
 ```bash
