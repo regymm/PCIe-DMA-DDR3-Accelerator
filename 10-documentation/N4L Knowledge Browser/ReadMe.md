@@ -36,7 +36,7 @@ Under `./n4lkviz/public/` you can find `arrows_dir` directory. It is a useful st
 
 For running the compiler, one shall run:
 ```bash
-python3 ./n4lkviz/public/n4l_bcompiler.py {directory to arrows files} {directory to the N4L source file}
+python3 n4l_bcompiler.py {directory to arrows files} {directory to the N4L source file}
 ```
 The way of running the compiler script may differ in OS other than the Ubuntu 22.04 way mentioned here.
 
