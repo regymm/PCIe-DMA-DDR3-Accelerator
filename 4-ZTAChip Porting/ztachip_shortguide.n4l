@@ -1,0 +1,163 @@
+- ZTAChip Accelerator Porting Documentation
+
+:: Introduction ::
+
+This document aimes for providing information about the ZTAChip architecture,files hierarachy for the ported system on Kintex-7 and the deployment steps for the project.
+
+document (trgs) information about ZTAChip architecture.
+   "     (trgs) information about porting files hierarachy.
+   "     (trgs) deployment and execution steps for ZTAChip project.
+
+Intially,one should know that the ZTAChip is not a standalone project. It is an accelerating chip for AI and DSP applications that are run counting on the RISC-V ISA-based orchestration. However, it is more generic than typical accelerators counting on the DSA it has allowing for hosting different applications on it.
+
+One can then conclude that the ZTAChip is a hardware design with capability of doing AI and and DSP related processing faster than the standalone RISC-V. This is what we call acceleration.
+
+ZTAChip (enables) AI acceleration.
+   "    (enables) DSP acceleration.
+   "    (enables) tensor processing acceleration.
+   "    (contain) dedicated programmable tensor processing cores.
+
+DSP (sfor) Digital Signal Processing.
+ "  (e.g.) edge detection.
+
+DSA (sfor) Domain-Specific Architecture.
+ "  (used-by) ZTAChip.
+
+Before moving to the details that are to be discussed in this document, an important concept has to be explained which is Hardware/Software Co-design. It is where both hardware and software are working together in the same system targetting the completion of a certain processing. It is now clear that the ZTAChip is the hardware part while the RISC-V is representing the software part. It is worth mentioning that the ZTAChip itself involves tensor cores in its architecture that need programming themselves as we would declare in the next sections.
+
+ZTAChip Project (bs-on) Hardware/Software Co-design.
+      "         (contain) Hardware Part (repr-by) ZTAChip.
+      "         (contain) Software Part (repr-by) RISC-V.
+      "         (uses) RISC-V for orchestration.
+
+:: ZTAChip Architecture Overview ::
+
+This section tackles giving a brief description for the ZTAChip accelerator hardware architecture. The goal is to have enough awareness about how the system is constructed before having it deployed on hardware.
+
+The authors of the ZTAChip project published the hardware architecture at "https://ztachip.github.io/HardwareDesign.html". This source demonstrates the internal construction of the hardware block. It shows the ZTAChip is relying on tensor processing cores that are receiving their instructions from the RISC-V through AXI Lite interface. Those instructions are in the ZTAChip DSL. Although it is important to know the hardware architecture of such a project, for a ZTAChip typical user or a programmer, there are more important information worth to be discussed than this.
+
+ZTAChip hardware architecture (resource) "https://ztachip&period;github&period;io/HardwareDesign&period;html".
+            "                 (contain) tensor processing cores (dep-on) RISC-V sent DSL instructions (suppl-by) AXI Lite interface.
+
+The ZTAChip hardware block is embedded in an FPGA-hosted SoC that contains both the ZTAChip and the RISC-V. In the main example, this SoC includes also VGA display, OV7670 camera, UART interface, leds and APB interface for extensibility.
+
+ZTAChip SoC (contain) ZTAChip.
+     "      (contain) RISC-V.
+     "      (contain) VGA display.
+     "      (contain) OV7670 Camera.
+     "      (contain) UART interface.
+     "      (contain) leds.
+     "      (contain) APB interface (enables) extensibility.
+
+The camera and display are mainly for the computer vision inference done on the ZTAChip system. Inference means in AI context the process of getting a neural network output.
+
+OV7670 Camera (used-by) computer vision inference.
+
+VGA display (used-by) computer vision inference.
+
+inference (means) getting the output of a neural network in runtime.
+
+In our system, we don't have either the camera or the VGA display. Thus, a camera emulator was created and it is currently fed from BRAM while for the display the work is in progress for establishing a 1Gb Ethernet over the board SFP ports.
+
+Our System (has no) OV7670 Camera.
+     "     (has no) VGA display.
+
+Mohamed (cr) Camera emulator (suppl-by) BRAM.
+    "   (cr) Ethernet over SFP (repl) VGA display.
+
+The software program is loaded to the RISC-V via JTAG interface using GDB Debugger and OpenOCD.
+
+Software Program loading (uses) JTAG.
+            "            (uses) OpenOCD.
+            "            (uses) GDB Debugger.
+
+For OpenXC7 compatibility, Xilinx primitives were replaced by open-source ones that were verified against the Xilinx designs output. Additionally, the clocking wizard was replaced by MMCM instance to avoid using proprietary blocks. Moreover, the MIG memory controller was replaced by UberDDR3 memory controller configured on using 1 lane of the memory.
+
+OpenXC7 (has no) proprietary Xilinx primitives.
+
+MIG controller (repl-by) UberDDR3.
+
+Clocking wizard (repl-by) MMCM.
+
+proprietary Xilinx primitives (repl-by) Open-source primitives (testby) SystemVerilog testbenches (contain) original primitives.
+
+:: Hardware Files Overview ::
+
+In this section, the role for the hardware files uploaded on the regymm repository is discussed. It should be noted that the XDC file is not uploaded since the used chips are not the same.
+
+camera_emu (repr) camera emulator design.
+
+ram (repr) BRAM created for storing the testing image.
+
+CCD_SYNC (repr) synchronizer instantiation.
+
+cdc_array_single (repr) open-source synchronizer primitive.
+
+clk_mmcm_diff (repr) MMCM instantiation for differential clock.
+
+DPRAM (repr) double port RAM instantiation.
+
+memory_sdpram (repr) open-source DPRAM primitive.
+
+DPRAM_BE (repr) double port RAM instantiation with byte enable.
+
+memory_sdpram_be (repr) open-source DPRAM_BE primitive.
+
+DPRAM_DUAL_CLOCK (repr) double port RAM instantiation with double clock.
+
+memory_dpdistram (repr) open-source DPRAM_DUAL_CLOCK primitive.
+
+SPRAM (repr) single port RAM instantiation.
+
+memory_spram (repr) open-source SPRAM primitive.
+
+SPRAM_BE (repr) single port RAM instantiation with byte enable.
+
+memory_spram_be (repr) open-source SPRAM_BE primitive.
+
+riscv (repr) VexRISCV design.
+
+SHIFT (repr) shift register.
+
+soc (repr) ZTAChip SoC design.
+
+soc (genby) GHDL script (resource) ZTAChip main repository.
+
+SYNC_LATCH (repr) synchronizing latch.
+
+vga_sample (repr) single color channel sampling design at low rate.
+
+uberfiles (contain) used files from UBERDDR3 project
+
+main (repr) top module.
+
+y_synth.mk (repr) make file for yosys synthesis.
+
+openXC7.mk (repr) OpenXC7 make file.
+
+:: Software Build Procedures ::
+
+This part discusses the build procedures for a software program for ZTAChip. It mentions both infomation coming from the original project repository and a demo for a computer vision program.
+
+The ZTAChip documentation uploaded on "https://ztachip.github.io/GettingStarted.html#1-software-build-procedure" has the essential requirements for building the toolchain and getting the environment ready for proper compilation.
+
+ZTAChip documentation (contain) procedures for building the toolchain.
+         "            (contain) procedures for compiling and building demo and custom softwares.
+
+At regymm repository, "https://github.com/regymm/PCIe-DMA-DDR3-Accelerator/tree/main/4-ZTAChip%20Porting/software%20files", there is uploaded 2 scripts and the running program for a computer vision demo that was provided originally in the main ZTAChip repository.
+
+openocd_launch&period;sh (repr) creating an OpenOCD terminal for listening on the JTAG port connected to the PC.
+
+program1_run&period;sh (repr) opening GDB debugger terminal for uploading the compiled software.
+
+program1&period;txt (repr) loading and running the program GDB commands.
+
+
+
+
+
+
+
+
+
+ 
