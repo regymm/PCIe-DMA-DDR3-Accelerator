@@ -382,7 +382,7 @@ module ddr3_phy #(
                 .C(i_controller_clk), // 1-bit input: Clock input, when using OSERDESE2, C is connected to CLKDIV
                 .CE(1'b0), // 1-bit input: Active high enable increment/decrement input
                 .CINVCTRL(1'b0), // 1-bit input: Dynamic clock inversion input
-                .CLKIN(1'b0), // 1-bit input: Clock delay input
+                .CLKIN(), // 1-bit input: Clock delay input
                 .CNTVALUEIN(5'd0), // 5-bit input: Counter value input
                 .INC(1'b0), // 1-bit input: Increment / Decrement tap delay input
                 .LD(1'b0), // 1-bit input: Loads ODELAY_VALUE tap delay in VARIABLE mode, in VAR_LOAD or
@@ -557,7 +557,7 @@ module ddr3_phy #(
                     .C(i_controller_clk), // 1-bit input: Clock input, when using OSERDESE2, C is connected to CLKDIV
                     .CE(1'b0), // 1-bit input: Active high enable increment/decrement input
                     .CINVCTRL(1'b0), // 1-bit input: Dynamic clock inversion input
-                    .CLKIN(1'b0), // 1-bit input: Clock delay input
+                    .CLKIN(), // 1-bit input: Clock delay input
                     .CNTVALUEIN(i_controller_odelay_data_cntvaluein), // 5-bit input: Counter value input
                     .INC(1'b0), // 1-bit input: Increment / Decrement tap delay input
                     .LD(i_controller_odelay_data_ld[gen_index/8]), // 1-bit input: Loads ODELAY_VALUE tap delay in VARIABLE mode, in VAR_LOAD or
@@ -870,7 +870,7 @@ module ddr3_phy #(
                     .C(i_controller_clk), // 1-bit input: Clock input, when using OSERDESE2, C is connected to CLKDIV
                     .CE(1'b0), // 1-bit input: Active high enable increment/decrement input
                     .CINVCTRL(1'b0), // 1-bit input: Dynamic clock inversion input
-                    .CLKIN(1'b0), // 1-bit input: Clock delay input
+                    .CLKIN(), // 1-bit input: Clock delay input
                     .CNTVALUEIN(i_controller_odelay_data_cntvaluein), // 5-bit input: Counter value input
                     .INC(1'b0), // 1-bit input: Increment / Decrement tap delay input
                     .LD(i_controller_odelay_data_ld[gen_index]), // 1-bit input: Loads ODELAY_VALUE tap delay in VARIABLE mode, in VAR_LOAD or
@@ -1044,7 +1044,7 @@ module ddr3_phy #(
                     .C(i_controller_clk), // 1-bit input: Clock input, when using OSERDESE2, C is connected to CLKDIV
                     .CE(1'b0), // 1-bit input: Active high enable increment/decrement input
                     .CINVCTRL(1'b0), // 1-bit input: Dynamic clock inversion input
-                    .CLKIN(1'b0), // 1-bit input: Clock delay input
+                    .CLKIN(), // 1-bit input: Clock delay input
                     .CNTVALUEIN(i_controller_odelay_dqs_cntvaluein), // 5-bit input: Counter value input
                     .INC(1'b0), // 1-bit input: Increment / Decrement tap delay input
                     .LD(i_controller_odelay_dqs_ld[gen_index]), // 1-bit input: Loads ODELAY_VALUE tap delay in VARIABLE mode, in VAR_LOAD or
