@@ -58,7 +58,7 @@ The markdown file is the output of the direct replacement of the N4L arrows with
 - N4L arrows are translated
 - Comments are removed
 
-**Note: Since the browser is HTML-based, it is required to replace each dot that is not a full stop `e.g. S.Adam` and each comma that is not separating between sentences `e.g. apple, banana` with `&period;` and `&comma;`, respectively. Otherwise, they should be placed as dots and commas normally.**
+**Note: The browser is HTML-based, it is required to replace each dot that is not a full stop `e.g. S.Adam` and each comma that is not separating between sentences `e.g. apple, banana` with `&period;` and `&comma;`, respectively. Otherwise, they should be placed as dots and commas normally.**
 ## Home Page
 This section is concerned about the GUI start, specifically at the homepage. The browser is running locally on PC allowing for full privacy for the data. As the image shows, the homepage provides link references for:
 - The N4L4Doc Article
