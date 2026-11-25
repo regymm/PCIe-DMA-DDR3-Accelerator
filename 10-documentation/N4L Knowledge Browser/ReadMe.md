@@ -9,6 +9,7 @@
 -	Search Toolbox
 -	Graph and Notes Browsers
 -	Markdown Browser
+- Remove from Database
 -	Conclusion
 -	Author
 
@@ -34,9 +35,9 @@ As mentioned earlier, the compiler is built with Python and responsible for the 
 
 Under `./n4lkviz/public/` you can find `arrows_dir` directory. It is a useful start point for you that has a group of useful arrows to start documenting with.
 
-For running the compiler, one shall run:
+**From the public directory run:**:
 ```bash
-python3 ./n4lkviz/public/n4l_bcompiler.py {directory to arrows files} {directory to the N4L source file}
+python3 n4l_bcompiler.py {directory to arrows files} {directory to the N4L source file}
 ```
 The way of running the compiler script may differ in OS other than the Ubuntu 22.04 way mentioned here.
 
@@ -164,6 +165,15 @@ Additionally, semantic search feature is added to allow users to ask questions a
 
 <img width="1600" height="1031" alt="image" src="https://github.com/user-attachments/assets/1deb7ff3-9647-4779-9931-fc935c304680" />
 
+## Remove from Database
+
+In case you wanted to remove a file that is stored in the browser database with running a script instead of doing that manually, inside the `/public` directory, you can find the `n4ldb_delete.py` script which is dedicated for this purpose.
+
+**From the public directory run:**
+```bash
+python3 n4ldb_delete.py filename1.n4l filename2.n4l filenamex.n4l
+```
+The way of running the compiler script may differ in OS other than the Ubuntu 22.04 way mentioned here.
 
 ## Conclusion
 As a conclusion, KViz provides more than one viewing mode for allowing users of different preferences to have the availability to surf through the knowledge database. The project shows high potential in contributing to the portability of knowledge, specially those related to Hardware and Software Projects Documentation.
