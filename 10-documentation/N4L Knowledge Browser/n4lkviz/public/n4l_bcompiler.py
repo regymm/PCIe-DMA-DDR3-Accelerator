@@ -201,7 +201,7 @@ with open(notes_file_path, "r") as file:
             arrows_start = stripped_line.find(")", arrows_start+1) +1#new arrow start after the processed one end
             arrows_count=arrows_count-1#decrement
             if(arrows_count==0):
-                 md_file.write(notes_line + '\n')
+                 md_file.write(notes_line +'.' +'\n')
             notes_id = notes_id + 1#increment ID
         First_node = True
         First_visit = True
